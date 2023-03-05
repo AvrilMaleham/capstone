@@ -24,7 +24,7 @@ const middleware = [thunk];
 //   cart: {
 //     cartItems: cartFromLocalStorage,
 //   },
-// }
+// };
 
 const store = configureStore(
   {reducer},

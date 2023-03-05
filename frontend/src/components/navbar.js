@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Navbar = ({click}) => {
 
-  const cart = useSelector(state => state.cart);
+  const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
   const getCartCount = () => {

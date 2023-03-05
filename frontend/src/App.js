@@ -24,7 +24,7 @@ function App() {
      <Navbar click ={() => setSideToggle(true)}/>
      <SideDrawer show={sideToggle} click={() => setSideToggle(false)}/>
      <Backdrop show={sideToggle} click={() => setSideToggle(false)}/>
-     <main>
+     <main className="app">
       <Routes>
         <Route path="/" element={<HomeScreen/>}/>
         <Route path="/product/:id" element={<ProductScreen/>} />
