@@ -8,13 +8,15 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
         <img src={item.imageUrl} alt={item.name} />
       </div>
 
-      <Link to={`/product/${item.product}`} className="cartItem_name">
-        <p>{item.name}</p>
-      </Link>
+      {/* <Link to={`/product/${item.product}`} className="cartItem_name">
+       
+      </Link>  */}
+
+<p className="cartItem_name">{item.name}</p>
 
       <p className="cartItem_price"> ${item.price}</p>
 
-      <select
+      {/* <select
         className="cartItem_select"
         value={item.qty}
         onChange={(e) => qtyChangeHandler(item.product, e.target.value)}
@@ -24,10 +26,10 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
             {x + 1}
           </option>
         ))}
-      </select>
+      </select> */}
 
       <button className="cartItem_deleteButton" onClick={() => removeHandler(item.product)}>
-        <i className="fas fa-trash"></i>
+        x
       </button>
     </div>
   );

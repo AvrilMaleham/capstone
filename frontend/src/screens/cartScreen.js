@@ -14,9 +14,9 @@ const CartScreen = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
-  const qtyChangeHandler = (id, qty) => {
-    dispatch(addToCart(id, qty));
-  };
+  // const qtyChangeHandler = (id, qty) => {
+  //   dispatch(addToCart(id, qty));
+  // };
 
   const removeHandler = (id) => {
     dispatch(removeFromCart(id));
@@ -33,7 +33,7 @@ const CartScreen = () => {
   return (
     <div className="cartScreen">
       <div className="cartScreen_left">
-        <h2>Shopping Cart</h2>
+       
         {cartItems.length === 0 ? (
           <div>
             Your cart is empty <Link to="/">Go Back</Link>
@@ -43,7 +43,7 @@ const CartScreen = () => {
             <CartItem
             key={item.product}
               item={item}
-              qtyChangeHandler={qtyChangeHandler}
+              //qtyChangeHandler={qtyChangeHandler}
               removeHandler={removeHandler}
             />
           ))

@@ -19,15 +19,32 @@ const SideDrawer = ({show, click}) => {
     return <div className={sideDrawerClass.join(" ")}>
         <ul className="sideDrawer_links" onClick={click}>
         <li>
-            <Link to="/cart">
-            <i className="fas fa-shopping-cart"></i>
-                <span>
-                    Cart <span className="sideDrawer_cartbadge">{getCartCount()}</span>
-                </span>
-            </Link>
+          <span>Home</span>
         </li>
         <li>
-            <Link to="/">Shop</Link>
+          <span>Contact</span>
+        </li>
+        <li>
+        <Link to="/services">Services</Link>
+        </li>
+        <li>
+          <Link to="/">Products</Link>
+        </li>
+        <li>
+          <Link to="/cart">
+            <span>
+              Cart
+              <span className="sideDrawer_cartbadge">{getCartCount()}</span>
+            </span>
+          </Link>
+        </li>
+        <li>
+             <span>
+              <br></br>
+             </span>
+        </li>
+        <li>
+            <img className="sidedrawer_logo" src={require("../assets/edify.png")} alt="logo" />
         </li>
         </ul>
     </div>

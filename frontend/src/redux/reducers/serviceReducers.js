@@ -1,18 +1,18 @@
-import * as actionTypes from '../constants/productConstants';
+import * as actionTypes from '../constants/serviceConstants';
 
-export const getProductsReducer = (state = {products: [] }, action) => {
+export const getServicesReducer = (state = {services: [] }, action) => {
 switch(action.type) {
-    case actionTypes.GET_PRODUCTS_REQUEST:
+    case actionTypes.GET_SERVICES_REQUEST:
         return {
             loading: true,
-            products: [],
+            services: [],
         }; 
-        case actionTypes.GET_PRODUCTS_SUCCESS:
+        case actionTypes.GET_SERVICES_SUCCESS:
             return {
                 loading: false,
-                products: action.payload,
+                services: action.payload,
             };
-            case actionTypes.GET_PRODUCTS_FAIL:
+            case actionTypes.GET_SERVICES_FAIL:
                 return {
                     loading: false,
                     error: action.payload,
@@ -22,25 +22,25 @@ switch(action.type) {
 }
 };
 
-export const getProductDetailsReducer = (state = { product: {}}, action) => {
+export const getServiceDetailsReducer = (state = { service: {}}, action) => {
     switch(action.type) {
-        case actionTypes.GET_PRODUCT_DETAILS_REQUEST:
+        case actionTypes.GET_SERVICE_DETAILS_REQUEST:
             return {
                 loading: true,
             };
-            case actionTypes.GET_PRODUCT_DETAILS_SUCCESS:
+            case actionTypes.GET_SERVICE_DETAILS_SUCCESS:
                 return {
                     loading: false,
-                    product: action.payload,
+                    service: action.payload,
                 };
-                case actionTypes.GET_PRODUCT_DETAILS_FAIL:
+                case actionTypes.GET_SERVICE_DETAILS_FAIL:
                     return {
                         loading: false,
                         error: action.payload,
                     };
-                    case actionTypes.GET_PRODUCT_DETAILS_RESET:
+                    case actionTypes.GET_SERVICE_DETAILS_RESET:
                         return {
-                            product: {},
+                            service: {},
                         };
                       default:
                         return state;   

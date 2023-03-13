@@ -28,7 +28,11 @@
 // }, []);
 
 
-
+// const addToCartHandler = {} = () => {
+//     dispatch(addToCart(product._id, qty));
+//     //?
+//     navigate('/cart');
+// }
 
 //     return(
 //         <div className='productScreen' >
@@ -60,7 +64,9 @@
 //                            ))}
 //                         </select>   
 //                     </p>
-                    
+//                     <p> 
+//                         <button type="button" onClick={addToCartHandler} > Add to cart </button> 
+//                     </p>
 //                 </div>
 
 //             </div>
