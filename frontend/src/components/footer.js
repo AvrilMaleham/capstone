@@ -9,7 +9,7 @@ const Footer = ({ click }) => {
           <span>Home</span>
         </li>
         <li>
-          <span>Services</span>
+        <Link to="/services" className="nav_link">Services</Link>
         </li>
         <li>
           <Link to="/" className="nav_link">
@@ -23,7 +23,7 @@ const Footer = ({ click }) => {
           <span>Contact</span>
         </li>
         <li>
-          <span>Phone: 012 888 462</span>
+          <span>Phone: 021 888 462</span>
         </li>
         <li>
           <span>Email: info@edifypmconsulting.com</span>

@@ -4,7 +4,10 @@ import {Link} from 'react-router-dom';
 const Service = ({imageUrl, name, price, description, serviceId}) => {
     return (
     <div className='service'>
+
+        <div className="key_image">
         <img src={imageUrl} alt={name} />
+        </div>
 
         <div className="service_info" >
             <p className="info_name" >{name}</p>

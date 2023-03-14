@@ -10,6 +10,10 @@
 
 }
 
+.left_image > img {
+   border-radius: 10px;
+}
+
 .left_image {
     margin: 1rem;
     flex: 0.6;
@@ -21,6 +25,8 @@
     background-color: #fff;
     height: fit-content;
     font-size: 0.9rem;
+    color: #29343e;
+    border-radius: 10px;
 }
 
 .left_name {

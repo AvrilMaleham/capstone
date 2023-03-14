@@ -20,7 +20,7 @@ const HomeScreen = () => {
 
   return (
     <div className="homeScreen">
-      <h2 className="homeScreen_title">Latest Products</h2>
+      <h2 className="homeScreen_title">Our Products</h2>
 
       <div className="homeScreen_products">
         {loading ? (

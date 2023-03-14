@@ -14,9 +14,9 @@ const CartScreen = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
-  // const qtyChangeHandler = (id, qty) => {
-  //   dispatch(addToCart(id, qty));
-  // };
+  const qtyChangeHandler = (id, qty) => {
+    dispatch(addToCart(id, qty));
+  };
 
   const removeHandler = (id) => {
     dispatch(removeFromCart(id));
@@ -29,6 +29,15 @@ const CartScreen = () => {
   const getCartSubTotal = () => {
     return cartItems.reduce((price, item) => item.price * item.qty + price, 0);
   };
+
+
+  const gst = () => {
+    return getCartSubTotal() / 100 * 15;
+  }
+
+  const total = () => {
+    return getCartSubTotal() + gst();
+  }
 
   return (
     <div className="cartScreen">
@@ -43,7 +52,7 @@ const CartScreen = () => {
             <CartItem
             key={item.product}
               item={item}
-              //qtyChangeHandler={qtyChangeHandler}
+              qtyChangeHandler={qtyChangeHandler}
               removeHandler={removeHandler}
             />
           ))
@@ -54,9 +63,13 @@ const CartScreen = () => {
         <div className="cartScreen_info">
           <p>Subtotal ({getCartCount()}) items</p>
           <p>${getCartSubTotal().toFixed(2)}</p>
+          <p>GST</p>
+          <p>${gst().toFixed(2)}</p>
+          <p>Total</p>
+          <p>${total().toFixed(2)}</p>
         </div>
         <div>
-          <button>Proceed to Checkout </button>
+          <button>CHECKOUT</button>
         </div>
       </div>
     </div>
