@@ -1,14 +1,13 @@
 import "./product.css";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 //Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Product = ({ imageUrl, name, price, description, productId }) => {
+const Product = ({ imageUrl, name, price, productId }) => {
  const id = productId;
 
   const navigate = useNavigate();
@@ -26,9 +25,7 @@ const Product = ({ imageUrl, name, price, description, productId }) => {
   }, []);
 
   const addToCartHandler = ({} = () => {
-    console.log("product id: ", product._id, product.name)
-    dispatch(addToCart(product._id, qty));
-    //?
+    dispatch(addToCart(id, qty));
     navigate("/cart");
   });
 

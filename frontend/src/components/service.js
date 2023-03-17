@@ -1,7 +1,7 @@
 import './service.css'
 import {Link} from 'react-router-dom';
 
-const Service = ({imageUrl, name, price, description, serviceId}) => {
+const Service = ({imageUrl, name, description, serviceId}) => {
     return (
     <div className='service'>
 

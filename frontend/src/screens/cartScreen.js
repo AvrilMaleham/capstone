@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 
 //Components
 import CartItem from "../components/cartItem";
+import MyPayPal from "../components/payPalButton";
 
 //Actions
-import { addToCart, removeFromCart } from "../redux/actions/cartActions";
+import { addToCart, removeFromCart, resetCart } from "../redux/actions/cartActions";
+
+
 
 const CartScreen = () => {
   const dispatch = useDispatch();
@@ -22,6 +25,10 @@ const CartScreen = () => {
     dispatch(removeFromCart(id));
   };
 
+  const resetHandler = () => {
+    dispatch(resetCart());
+  };
+
   const getCartCount = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
@@ -30,27 +37,28 @@ const CartScreen = () => {
     return cartItems.reduce((price, item) => item.price * item.qty + price, 0);
   };
 
-
   const gst = () => {
-    return getCartSubTotal() / 100 * 15;
-  }
+    return (getCartSubTotal() / 100) * 15;
+  };
 
   const total = () => {
     return getCartSubTotal() + gst();
-  }
+  };
+
+
+  let info = cartItems.map(a => a.name);
 
   return (
     <div className="cartScreen">
       <div className="cartScreen_left">
-       
         {cartItems.length === 0 ? (
           <div>
-            Your cart is empty <Link to="/">Go Back</Link>
+            Your cart is empty <Link to="/products">Go Back</Link>
           </div>
         ) : (
           cartItems.map((item) => (
             <CartItem
-            key={item.product}
+              key={item.product}
               item={item}
               qtyChangeHandler={qtyChangeHandler}
               removeHandler={removeHandler}
@@ -68,9 +76,10 @@ const CartScreen = () => {
           <p>Total</p>
           <p>${total().toFixed(2)}</p>
         </div>
-        <div>
-          <button>CHECKOUT</button>
-        </div>
+        <MyPayPal total={total()} 
+          reset={resetHandler}
+        input={info} 
+          />
       </div>
     </div>
   );

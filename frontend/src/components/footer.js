@@ -6,13 +6,15 @@ const Footer = ({ click }) => {
     <footer className="footer">
       <ul className="first">
         <li>
-          <span>Home</span>
+        <Link to="/" className="nav_link">
+            Home
+          </Link>
         </li>
         <li>
         <Link to="/services" className="nav_link">Services</Link>
         </li>
         <li>
-          <Link to="/" className="nav_link">
+          <Link to="/products" className="nav_link">
             Products
           </Link>
         </li>

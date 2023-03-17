@@ -8,7 +8,7 @@ import { getServiceDetails } from '../redux/actions/serviceActions';
 import { addToCart } from '../redux/actions/cartActions';
 import { useParams, useNavigate } from 'react-router-dom';
 
-//const ProductScreen = ({match, history}) => {
+
     const IndividualServiceScreen = () => {
 
 const { id } = useParams(); 
@@ -28,11 +28,6 @@ useEffect(() => {
 }, []);
 
 
-const addToCartHandler = {} = () => {
-    dispatch(addToCart(service._id, qty));
-    //?
-    navigate('/cart');
-}
 
     return(
         <div className='individualServiceScreen' >
