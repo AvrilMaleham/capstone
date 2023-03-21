@@ -1,0 +1,20 @@
+.bannerButton {
+ 
+        /* display: block; */
+        width: 25%;
+        text-decoration: none;
+        text-align: center;
+        color: #f4f4f4;
+        background-color: #29343e;
+        padding: 8px 16px;
+        border: 1px solid #29343e;
+        font-size: 1rem;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+
+.bannerButton:hover {
+    background-color: #f4f4f4;
+    color: #29343e;
+}

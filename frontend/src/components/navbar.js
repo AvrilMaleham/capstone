@@ -22,7 +22,7 @@ const Navbar = ({click}) => {
         <Link to="/" className="nav_link">Home</Link>
         </li>
         <li>
-          <span>Contact</span>
+        <Link to="/contact" className="nav_link">Contact</Link>
         </li>
         <li>
         <Link to="/services" className="nav_link">Services</Link>

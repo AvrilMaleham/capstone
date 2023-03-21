@@ -22,7 +22,7 @@ const SideDrawer = ({show, click}) => {
         <Link to="/">Home</Link>
         </li>
         <li>
-          <span>Contact</span>
+        <Link to="/contact" className="nav_link">Contact</Link>
         </li>
         <li>
         <Link to="/services">Services</Link>

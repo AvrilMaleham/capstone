@@ -9,6 +9,9 @@ import { addToCart } from "../redux/actions/cartActions";
 import { useParams, useNavigate } from "react-router-dom";
 
 const IndividualServiceScreen = () => {
+
+  const [book, setBook] = useState(false);
+
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -24,12 +27,13 @@ const IndividualServiceScreen = () => {
     }
   }, []);
 
-  const [book, setBook] = useState(service.name == "Inspections" ? setBook(true) : setBook(false));
 
-     //service.name == "Inspections" ? setBook(true) : setBook(false);
+     const bookButtonHandler = () => {
+      service.name === "Inspections" ? setBook(true) : setBook(false);
+     }
 
   return (
-    <div className="individualServiceScreen">
+    <div className="individualServiceScreen" onLoad={bookButtonHandler}>
       {loading ? (
         <h2>Loading...</h2>
       ) : error ? (

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 //Screens
 import HomeScreen from './screens/homeScreen';
+import ContactScreen from './screens/contactScreen';
 import ProductScreen from './screens/productScreen';
 import CartScreen from './screens/cartScreen';
 import ServicesScreen from './screens/servicesScreen';
@@ -31,6 +32,7 @@ function App() {
      <main className="app">
       <Routes>
       <Route path="/" element={<HomeScreen/>}/>
+      <Route path="/contact" element={<ContactScreen/>}/>
         <Route path="/products" element={<ProductScreen/>}/>
         <Route path="/cart" element={<CartScreen/>} />
         <Route path="/success" element={<SuccessScreen/>} />
