@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 //Components
 import Service from "../components/service";
+import { BannerButton } from "../components/buttons";
 
 //Actions
 import { getServices as listServices } from "../redux/actions/serviceActions";
@@ -20,8 +21,15 @@ const ServicesScreen = () => {
 
   return (
     <div className="servicesScreen">
-      <h2 className="servicesScreen_title">Our Services</h2>
 
+      <div className="servicesBanner">
+        <h1 className="servicesScreen_title">Our Services</h1>
+        <div className="buttonLayout">
+<BannerButton name="PRODUCTS" nav="/products" ></BannerButton>
+<BannerButton name="CONTACT" nav="/contact" ></BannerButton>
+        </div>
+
+      </div>
       <div className="servicesScreen_products">
         {loading ? (
           <h2>Loading...</h2>

@@ -24,6 +24,10 @@
     padding-left: 8%;
 }
 
+.about {
+    display: flex;
+}
+
 @media (min-width: 900px) {
     .homeScreen_title {
         font-size: 80px;

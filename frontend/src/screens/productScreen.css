@@ -1,13 +1,39 @@
-.homeScreen {
-    max-width: 1300px;
-    margin: 1rem auto;
+
+
+.productBanner {
+    background-image: url('../assets/productsBanner.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position:bottom;
+    
 }
 
 .productScreen_title {
-    font-size: 1.5rem;
-    color: #29343e;;
+  font-size: 50px;
+ 
+    color: #29343e;
     margin-bottom: 1rem;
-    margin-left: 8px;
+    padding-left: 8%;
+    padding-top: 250px;
+    text-shadow: white 10px 10px 10px;
+    
+    
+}
+
+.buttonLayout {
+    display: flex;
+    padding-left: 8%;
+}
+
+@media (min-width: 900px) {
+    .productScreen_title {
+        font-size: 80px;
+        padding-top: 200px;
+        padding-left: 10%;
+    }
+    .buttonLayout {
+        padding-left: 10%;
+    }
 }
 
 .homeScreen_products {

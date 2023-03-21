@@ -25,7 +25,7 @@ const ProductScreen = () => {
       <div className="productBanner">
         <h1 className="productScreen_title">Our Products</h1>
         <div className="buttonLayout">
-<BannerButton name="PRODUCTS" nav="/products" ></BannerButton>
+<BannerButton name="SERVICES" nav="/services" ></BannerButton>
 <BannerButton name="CONTACT" nav="/contact" ></BannerButton>
         </div>
       </div>
