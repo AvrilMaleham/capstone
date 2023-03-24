@@ -1,11 +1,12 @@
 import * as actionTypes from '../constants/serviceConstants';
 import axios from 'axios';
 
+
 export const getServices = () => async (dispatch) => {
     try {
         dispatch({type: actionTypes.GET_SERVICES_REQUEST});
 
-        const { data } = await axios.get("/api/services");
+        const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services`);
 
         dispatch ({
             type: actionTypes.GET_SERVICES_SUCCESS,
@@ -25,7 +26,7 @@ export const getServiceDetails = (id) => async (dispatch) => {
     try {
         dispatch({type: actionTypes.GET_SERVICE_DETAILS_REQUEST});
 
-        const { data } = await axios.get(`/api/services/${id}`);
+        const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/${id}`);
 
         dispatch ({
             type: actionTypes.GET_SERVICE_DETAILS_SUCCESS,

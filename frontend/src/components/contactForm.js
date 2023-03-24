@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./contactForm.css"
 
+
 const ContactForm = ({onValidated}) => {
 
   const [email, setEmail] = useState("");
@@ -32,7 +33,7 @@ const ContactForm = ({onValidated}) => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:3001/api/contact", {
+    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
