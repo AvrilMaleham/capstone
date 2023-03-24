@@ -46,14 +46,14 @@ jobs:
         working-directory: ./frontend
         # Build image with tag rakeshpotnuru/productivity-app:client
         run: |
-          docker build -t avrilmaleham/capstone:frontend-${{github.run_number}} .
+          docker build -t avrilm/capstone:frontend-${{github.run_number}} .
       # Build a Docker image for the server application
       - name: Build Server Docker Image
         working-directory:
           ./backend
           # Build image with tag rakeshpotnuru/productivity-app:server
         run: |
-          docker build -t avrilmaleham/capstone:backend-${{github.run_number}} .
+          docker build -t avrilm/capstone:backend-${{github.run_number}} .
       # # Build a Docker image for the NGINX reverse proxy
       # - name: Build NGINX Docker Image
       #   working-directory: ./nginx
@@ -70,8 +70,8 @@ jobs:
       # Push the Docker images to Docker Hub
       - name: Push Docker Images to Docker Hub
         run: |
-          docker push avrilmaleham/capstone:frontend-${{github.run_number}}
-          docker push avrilmaleham/capstone:backend-${{github.run_number}}
+          docker push avrilm/capstone:frontend-${{github.run_number}}
+          docker push avrilm/capstone:backend-${{github.run_number}}
           # docker push rakeshpotnuru/productivity-app:nginx-${{github.run_number}}
           # docker push rakeshpotnuru/productivity-app:client-latest
           # docker push rakeshpotnuru/productivity-app:server-latest
