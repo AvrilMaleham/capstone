@@ -46,20 +46,20 @@ jobs:
         working-directory: ./frontend
         # Build image with tag rakeshpotnuru/productivity-app:client
         run: |
-          docker build -t avrilm/capstone:frontend-${{github.run_number}} .
+          docker build -t avrilm/capstone:frontend-${{github.run_number}} -t avrilm/capstone:frontend-latest .
       # Build a Docker image for the server application
       - name: Build Server Docker Image
         working-directory:
           ./backend
           # Build image with tag rakeshpotnuru/productivity-app:server
         run: |
-          docker build -t avrilm/capstone:backend-${{github.run_number}} .
-      # # Build a Docker image for the NGINX reverse proxy
-      # - name: Build NGINX Docker Image
-      #   working-directory: ./nginx
-      #   # Build image with tag rakeshpotnuru/productivity-app:nginx
-      #   run: |
-      #     docker build -t rakeshpotnuru/productivity-app:nginx-${{github.run_number}} -t rakeshpotnuru/productivity-app:nginx-latest .
+          docker build -t avrilm/capstone:backend-${{github.run_number}} -t avrilm/capstone:backend-latest .
+      # Build a Docker image for the NGINX reverse proxy
+      - name: Build NGINX Docker Image
+        working-directory: ./nginx
+        # Build image with tag rakeshpotnuru/productivity-app:nginx
+        run: |
+          docker build -t avrilm/capstone:nginx-${{github.run_number}} -t avrilm/capstone:nginx-latest .
       # Log in to Docker Hub using credentials from repository secrets
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -72,18 +72,18 @@ jobs:
         run: |
           docker push avrilm/capstone:frontend-${{github.run_number}}
           docker push avrilm/capstone:backend-${{github.run_number}}
-          # docker push rakeshpotnuru/productivity-app:nginx-${{github.run_number}}
-          # docker push rakeshpotnuru/productivity-app:client-latest
-          # docker push rakeshpotnuru/productivity-app:server-latest
-          # docker push rakeshpotnuru/productivity-app:nginx-latest
+          docker push avrilm/capstone:nginx-${{github.run_number}}
+          docker push avrilm/capstone:frontend-latest
+          docker push avrilm/capstone:backend-latest
+          docker push avrilm/capstone:nginx-latest
       # This is the step that is deploying the application to Elastic Beanstalk.
-      # - name: Deploy to Elastic Beanstalk
-      #   uses: einaregilsson/beanstalk-deploy@v21
-      #   with:
-      #     aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     application_name: ${{ secrets.EB_APP_NAME }}
-      #     environment_name: ${{ secrets.EB_ENV_NAME }}
-      #     region: ${{ secrets.EB_REGION }}
-      #     version_label: "version-${{ github.run_number }}"
-      #     deployment_package: docker-compose.yml
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: ${{ secrets.EB_APP_NAME }}
+          environment_name: ${{ secrets.EB_ENV_NAME }}
+          region: ${{ secrets.EB_REGION }}
+          version_label: "version-${{ github.run_number }}"
+          deployment_package: docker-compose.yml
