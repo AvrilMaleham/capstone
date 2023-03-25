@@ -30,6 +30,7 @@ jobs:
         working-directory: ./frontend
         run: |
           npm install
+          export REACT_APP_BASE_URL=$REACT_APP_BASE_URL
       # Install dependencies, export environment variables to be used by application and run tests ? for the server application
       - name: Install and Test Server
         working-directory: ./backend
@@ -39,7 +40,6 @@ jobs:
           export EMAIL_PASS=$EMAIL_PASS
           export EMAIL_USER=$EMAIL_USER
           export PORT=$PORT
-          export REACT_APP_BASE_URL=$REACT_APP_BASE_URL
           # npm run test
       # Build a Docker image for the client application
       - name: Build Client Docker Image
