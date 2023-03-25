@@ -30,7 +30,7 @@ jobs:
         working-directory: ./frontend
         run: |
           npm install
-          export REACT_APP_BASE_URL=$REACT_APP_BASE_URL
+          # export REACT_APP_BASE_URL=$REACT_APP_BASE_URL
       # Install dependencies, export environment variables to be used by application and run tests ? for the server application
       - name: Install and Test Server
         working-directory: ./backend
