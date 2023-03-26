@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   nginx:
-    image: avrilm/capstone:nginx-latest
+    image: avrilm/edify:nginx-latest
     restart: always
     depends_on:
       - client
@@ -11,13 +11,13 @@ services:
       - "80:80"
 
   client:
-    image: avrilm/capstone:client-latest
+    image: avrilm/edify:client-latest
     environment:
       - CHOKIDAR_USEPOLLING=true
       - REACT_APP_BASE_URL=${REACT_APP_BASE_URL}
 
   server:
-    image: avrilm/capstone:server-latest
+    image: avrilm/edify:server-latest
     environment:
       - MONGODB_URI=${MONGODB_URI}
       - EMAIL_PASS=${EMAIL_PASS}
