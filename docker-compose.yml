@@ -11,13 +11,13 @@ services:
       - "80:80"
 
   client:
-    image: avrilm/capstone:frontend-latest
+    image: avrilm/capstone:client-latest
     environment:
       - CHOKIDAR_USEPOLLING=true
       - REACT_APP_BASE_URL=${REACT_APP_BASE_URL}
 
   server:
-    image: avrilm/capstone:backend-latest
+    image: avrilm/capstone:server-latest
     environment:
       - MONGODB_URI=${MONGODB_URI}
       - EMAIL_PASS=${EMAIL_PASS}

@@ -1,0 +1,83 @@
+.input_label {
+    display: grid;
+    grid-row-gap: 10px;
+    color: #29343e;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 400px;
+    font-family: 'Varela Round', sans-serif;
+    
+  }
+
+  /* @include m.smMinBreakPoint {
+    font-size: 18px;
+  } */
+  
+  .input_field {
+   
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    font-weight: bold;
+    color: #29343e;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  .input_field:focus {
+    outline: none !important;
+    border-color: #db4814;
+    box-shadow: 0 0 10px #db4814;
+  }
+
+  /* @include m.smMinBreakPoint {
+    font-size: 18px;
+    padding: 20px 25px;
+  } */
+  
+  ::placeholder { /* Firefox */
+    font-weight: normal;
+    color: #29343e;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #29343e;
+    font-weight: normal;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #29343e;
+    font-weight: normal;
+  }
+  
+  input[disabled] {
+    background-color: #29343e;
+    cursor: default;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+  }
+
+  input {
+    transform: scale(1);
+    background-color: #29343e;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+  }
+  
+    /* &:hover {
+      background-color: v.$primaryDark2;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+      transform: scale(1);
+    } */
+   
+    @media (max-width: 560px) {
+      .input_field {
+      width: 100%;
+     
+      }
+      
+  }

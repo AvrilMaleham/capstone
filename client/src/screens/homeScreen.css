@@ -1,0 +1,40 @@
+
+.homeBanner {
+    background-image: url('../assets/homeBanner.jpeg');
+    height: 50vh;
+    background-size: cover;
+    background-position: 50%;
+    
+}
+
+.homeScreen_title {
+  font-size: 50px;
+ 
+    color: #29343e;
+    margin-bottom: 1rem;
+    padding-left: 8%;
+    padding-top: 250px;
+    text-shadow: white 10px 10px 10px;
+    
+    
+}
+
+.buttonLayout {
+    display: flex;
+    padding-left: 8%;
+}
+
+.about {
+    display: flex;
+}
+
+@media (min-width: 900px) {
+    .homeScreen_title {
+        font-size: 80px;
+        padding-top: 200px;
+        padding-left: 10%;
+    }
+    .buttonLayout {
+        padding-left: 10%;
+    }
+}
