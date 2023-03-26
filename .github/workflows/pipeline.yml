@@ -53,7 +53,7 @@ jobs:
           ./backend
           # Build image with tag rakeshpotnuru/productivity-app:server
         run: |
-          docker build -t avrilm/capstone:backend${{github.run_number}} -t avrilm/capstone:backend-latest .
+          docker build -t avrilm/capstone:backend-${{github.run_number}} -t avrilm/capstone:backend-latest .
       # Build a Docker image for the NGINX reverse proxy
       - name: Build NGINX Docker Image
         working-directory: ./nginx
