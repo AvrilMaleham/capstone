@@ -13,7 +13,7 @@ env:
   EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
   EMAIL_USER: ${{ secrets.EMAIL_USER }}
   PORT: ${{ secrets.PORT }}
-  REACT_APP_BASE_URL: ${{ secrets.REACT_APP_BASE_URL }}
+  # REACT_APP_BASE_URL: ${{ secrets.REACT_APP_BASE_URL }}
 
 # This is the workflow that is being run.
 jobs:
@@ -30,7 +30,6 @@ jobs:
         working-directory: ./frontend
         run: |
           npm install
-          # export REACT_APP_BASE_URL=$REACT_APP_BASE_URL
       # Install dependencies, export environment variables to be used by application and run tests ? for the server application
       - name: Install and Test Server
         working-directory: ./backend
