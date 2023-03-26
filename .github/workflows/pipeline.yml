@@ -45,20 +45,20 @@ jobs:
         working-directory: ./client
         # Build image with tag rakeshpotnuru/productivity-app:client
         run: |
-          docker build -t avrilm/capstone:client-${{github.run_number}} -t avrilm/capstone:client-latest .
+          docker build -t avrilm/edify:client-${{github.run_number}} -t avrilm/edify:client-latest .
       # Build a Docker image for the server application
       - name: Build Server Docker Image
         working-directory:
           ./server
           # Build image with tag rakeshpotnuru/productivity-app:server
         run: |
-          docker build -t avrilm/capstone:server${{github.run_number}} -t avrilm/capstone:server-latest .
+          docker build -t avrilm/edify:server${{github.run_number}} -t avrilm/edify:server-latest .
       # Build a Docker image for the NGINX reverse proxy
       - name: Build NGINX Docker Image
         working-directory: ./nginx
         # Build image with tag rakeshpotnuru/productivity-app:nginx
         run: |
-          docker build -t avrilm/capstone:nginx-${{github.run_number}} -t avrilm/capstone:nginx-latest .
+          docker build -t avrilm/edify:nginx-${{github.run_number}} -t avrilm/edify:nginx-latest .
       # Log in to Docker Hub using credentials from repository secrets
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -69,12 +69,12 @@ jobs:
       # Push the Docker images to Docker Hub
       - name: Push Docker Images to Docker Hub
         run: |
-          docker push avrilm/capstone:client-${{github.run_number}}
-          docker push avrilm/capstone:server-${{github.run_number}}
-          docker push avrilm/capstone:nginx-${{github.run_number}}
-          docker push avrilm/capstone:client-latest
-          docker push avrilm/capstone:server-latest
-          docker push avrilm/capstone:nginx-latest
+          docker push avrilm/edify:client-${{github.run_number}}
+          docker push avrilm/edify:server-${{github.run_number}}
+          docker push avrilm/edify:nginx-${{github.run_number}}
+          docker push avrilm/edify:client-latest
+          docker push avrilm/edify:server-latest
+          docker push avrilm/edfiy:nginx-latest
       # This is the step that is deploying the application to Elastic Beanstalk.
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
