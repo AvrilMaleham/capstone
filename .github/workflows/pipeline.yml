@@ -27,12 +27,12 @@ jobs:
 
       # Install dependencies and run tests ? for the client application
       - name: Install and Test Client
-        working-directory: ./client
+        working-directory: ./frontend
         run: |
           npm install
       # Install dependencies, export environment variables to be used by application and run tests ? for the server application
       - name: Install and Test Server
-        working-directory: ./server
+        working-directory: ./backend
         run: |
           npm install
           export MONGODB_URI=$MONGODB_URI
@@ -42,23 +42,23 @@ jobs:
           # npm run test
       # Build a Docker image for the client application
       - name: Build Client Docker Image
-        working-directory: ./client
+        working-directory: ./frontend
         # Build image with tag rakeshpotnuru/productivity-app:client
         run: |
-          docker build -t avrilm/edify:client-${{github.run_number}} -t avrilm/edify:client-latest .
+          docker build -t avrilm/capstone:frontend-${{github.run_number}} -t avrilm/capstone:frontend-latest .
       # Build a Docker image for the server application
       - name: Build Server Docker Image
         working-directory:
-          ./server
+          ./backend
           # Build image with tag rakeshpotnuru/productivity-app:server
         run: |
-          docker build -t avrilm/edify:server${{github.run_number}} -t avrilm/edify:server-latest .
+          docker build -t avrilm/capstone:backend${{github.run_number}} -t avrilm/capstone:backend-latest .
       # Build a Docker image for the NGINX reverse proxy
       - name: Build NGINX Docker Image
         working-directory: ./nginx
         # Build image with tag rakeshpotnuru/productivity-app:nginx
         run: |
-          docker build -t avrilm/edify:nginx-${{github.run_number}} -t avrilm/edify:nginx-latest .
+          docker build -t avrilm/capstone:nginx-${{github.run_number}} -t avrilm/capstone:nginx-latest .
       # Log in to Docker Hub using credentials from repository secrets
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -69,12 +69,12 @@ jobs:
       # Push the Docker images to Docker Hub
       - name: Push Docker Images to Docker Hub
         run: |
-          docker push avrilm/edify:client-${{github.run_number}}
-          docker push avrilm/edify:server-${{github.run_number}}
-          docker push avrilm/edify:nginx-${{github.run_number}}
-          docker push avrilm/edify:client-latest
-          docker push avrilm/edify:server-latest
-          docker push avrilm/edfiy:nginx-latest
+          docker push avrilm/capstone:frontend-${{github.run_number}}
+          docker push avrilm/capstone:backend-${{github.run_number}}
+          docker push avrilm/capstone:nginx-${{github.run_number}}
+          docker push avrilm/capstone:frontend-latest
+          docker push avrilm/capstone:backend-latest
+          docker push avrilm/capstone:nginx-latest
       # This is the step that is deploying the application to Elastic Beanstalk.
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21

@@ -3,32 +3,32 @@ version: '3'
 services:
 
   server:
-        build: ./server
+        build: ./backend
         expose:
             - 3001
         ports:
             - 3001:3001
         volumes:
-            - ./server/src:/app/src
+            - ./backend/src:/app/src
         depends_on:
             - mongo    
         command: npm run start
         env_file:
-        - ./server/.env  
+        - ./backend/.env  
 
   client:
-        build: ./client
+        build: ./frontend
         expose:
             - 3000   
         ports:
             - 3000:3000
         volumes:
-            - ./client/src:/app/src
-            - ./client/public:/app/public
+            - ./frontend/src:/app/src
+            - ./frontend/public:/app/public
         stdin_open: true
         command: npm run start
         env_file:
-        - ./client/.env  
+        - ./frontend/.env  
 
   mongo:
         image: mongo
