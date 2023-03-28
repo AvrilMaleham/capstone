@@ -33,7 +33,7 @@ const ContactForm = ({onValidated}) => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/contact`, {
+    let response = await fetch(`:3001/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
