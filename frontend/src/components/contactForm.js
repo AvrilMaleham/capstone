@@ -33,7 +33,7 @@ const ContactForm = ({onValidated}) => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch(`:3001/api/contact`, {
+    let response = await fetch(`${window.location.origin}:3001/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
