@@ -37,7 +37,7 @@ const ProductScreen = () => {
           <h2>Loading...</h2>
         ) : error ? (
           <h2>{error}</h2>
-        ) : (
+        ) : Array.isArray(products) ? (
           products.map((product) => (
             <Product
               key={product._id}
@@ -48,7 +48,7 @@ const ProductScreen = () => {
               imageUrl={product.imageUrl}
             />
           ))
-        )}
+        ) : null }
       </div>
     </div>
   );
