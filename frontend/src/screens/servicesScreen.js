@@ -35,7 +35,7 @@ const ServicesScreen = () => {
           <h2>Loading...</h2>
         ) : error ? (
           <h2>{error}</h2>
-        ) : (
+        ) : Array.isArray(services) ?  (
           services.map((service) => (
             <Service
               key={service._id}
@@ -45,7 +45,7 @@ const ServicesScreen = () => {
               imageUrl={service.imageUrl}
             />
           ))
-        )}
+        ) : null }
       </div>
     </div>
   );
