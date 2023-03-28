@@ -13,7 +13,11 @@ connectDB();
 const app = express();
 
 
-app.use(cors());
+app.use(cors({
+    allowedHeaders:
+    ['Authorization', 'Content-Type', 'X-Forwarded-For', 'X-Forwarded-Proto', 'X-Forwarded-Port'], 
+    origin: '*'
+}));
 
 app.use(express.json());
 
