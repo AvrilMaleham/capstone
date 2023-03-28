@@ -15,7 +15,7 @@ const app = express();
 
 app.use(cors({
     allowedHeaders:
-    ['Authorization', 'Content-Type', 'X-Forwarded-For', 'X-Forwarded-Proto', 'X-Forwarded-Port', 'Access-Control-Allow-Origin'], 
+    '*',
     origin: '*'
 }));
 
