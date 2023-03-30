@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 require('dotenv').config();
 
 const contactEmail = nodemailer.createTransport({
-  service: "hotmail",
+  service: process.env.EMAIL_ACCOUNT,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -25,8 +25,8 @@ router.post("/", (req, res) => {
   const email = req.body.email;
   const message = req.body.message;
   const mail = {
-    from: "avrilm.1@hotmail.co.uk",
-    to: "avrilm.1@hotmail.co.uk",
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: "Contact Form Submission",
     html: `<p>First Name: ${firstName}</p>
            <p>Last Name: ${lastName}</p>
