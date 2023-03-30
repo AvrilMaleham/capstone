@@ -10,10 +10,10 @@ Get everything (frontend, backend) running via Docker Compose
 Pull the code from GitHub
 
 In the backend directory, create a .env file
-In line 1 of the .env file, write 
-In line 2 of the .env file, write MONGODB_URI="mongodb-uri-here" and replace mongodb-uri-here with the URI for the MongoDB database you wish to connect.
-In line 3 of the .env file, write EMAIL_PASS="email-password-here" and replace email-password-here with the password of the email account you wish the messages from your contact form to be sent to. 
-In line 4 of the .env file, write EMAIL_USER="email-username-here" and replace email-username-here with the email address of the email account you wish the messages from your contact form to be sent to. 
+In line 1 of the .env file, write MONGODB_URI="mongodb-uri-here" and replace mongodb-uri-here with the URI for the MongoDB database you wish to connect.
+In line 2 of the .env file, write EMAIL_PASS="email-password-here" and replace email-password-here with the password of the email account you wish the messages from your contact form to be sent to. 
+In line 3 of the .env file, write EMAIL_USER="email-username-here" and replace email-username-here with the email address of the email account you wish the messages from your contact form to be sent to. 
+In line 4 of the .env file, write EMAIL_ACCOUNT="email-account-here" and replace email-account-here with the type of the email account you wish the messages from your contact form to be sent to e.g. hotmail, gmail, yahoo etc.
 
 Start Docker
 Once Docker has started, in the code directory, run the command docker-compose up --build
