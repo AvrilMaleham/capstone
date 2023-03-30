@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PopupButton } from "react-calendly";
 
+
 //Actions
 import { getServiceDetails } from "../redux/actions/serviceActions";
 import { addToCart } from "../redux/actions/cartActions";
@@ -32,6 +33,8 @@ const IndividualServiceScreen = () => {
       service.name === "Inspections" ? setBook(true) : setBook(false);
      }
 
+     const calendly = process.env.REACT_APP_CALENDLY_URL;
+
   return (
     <div className="individualServiceScreen" onLoad={bookButtonHandler}>
       {loading ? (
@@ -54,7 +57,7 @@ const IndividualServiceScreen = () => {
 
       {book ? (
        <PopupButton className="bookbutton"
-       url="https://calendly.com/avrilmaleham"
+       url={calendly}
        /*
         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
