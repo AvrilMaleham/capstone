@@ -13,6 +13,7 @@ services:
       - MONGODB_URI=${MONGODB_URI}
       - EMAIL_PASS=${EMAIL_PASS}
       - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_ACCOUNT=${EMAIL_ACCOUNT}
       
     ports:
       - "3001:3001"
