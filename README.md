@@ -15,6 +15,9 @@ In line 2 of the .env file, write EMAIL_PASS="email-password-here" and replace e
 In line 3 of the .env file, write EMAIL_USER="email-username-here" and replace email-username-here with the email address of the email account you wish the messages from your contact form to be sent to. 
 In line 4 of the .env file, write EMAIL_ACCOUNT="email-account-here" and replace email-account-here with the type of the email account you wish the messages from your contact form to be sent to e.g. hotmail, gmail, yahoo etc.
 
+In the frontend directory, create a .env file
+In line 1 of the .env file, write REACT_APP_CALENDLY_URL="your-calendly-url-here" and replace your-calendly-url-here with the URl for the Calendly account you wish to connect.
+
 Start Docker
 Once Docker has started, in the code directory, run the command docker-compose up --build
 Once the docker images have built and the containers start up, open your browser and go to http://localhost
