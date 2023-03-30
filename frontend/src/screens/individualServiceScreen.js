@@ -33,7 +33,6 @@ const IndividualServiceScreen = () => {
       service.name === "Inspections" ? setBook(true) : setBook(false);
      }
 
-     const calendly = process.env.REACT_APP_CALENDLY_URL;
 
   return (
     <div className="individualServiceScreen" onLoad={bookButtonHandler}>
@@ -57,7 +56,7 @@ const IndividualServiceScreen = () => {
 
       {book ? (
        <PopupButton className="bookbutton"
-       url={calendly}
+       url="https://calendly.com/avrilmaleham"
        /*
         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
