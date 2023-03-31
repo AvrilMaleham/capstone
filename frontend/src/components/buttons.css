@@ -17,3 +17,23 @@
     background-color: #f4f4f4;
     color: #29343e;
 }
+
+.otherButton {
+ 
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    color: #29343e;
+    background-color: #f4f4f4 ;
+    padding: 8px 16px;
+    border: 1px solid #29343e;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+.otherButton:hover {
+background-color: #29343e;
+color:#f4f4f4 ;
+}

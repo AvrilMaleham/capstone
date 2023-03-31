@@ -14,7 +14,7 @@
     margin-bottom: 1rem;
     padding-left: 8%;
     padding-top: 250px;
-    text-shadow: white 10px 10px 10px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     
     
 }
@@ -28,6 +28,72 @@
     display: flex;
 }
 
+.about > h2 {
+    width: 40%;
+    margin: 40px;
+    text-align: center;
+    font-size: 5em;
+    color: #29343e;
+}
+
+.about-para {
+    width: 60%;
+    margin: 50px;
+    text-align: center;
+    color: #29343e;
+}
+
+.help {
+   display: flex;
+    background-color:#29343e;
+    padding: 20px;
+  
+}
+
+.help-title {
+    color: #ffffff;
+    font-size: 2em;
+    background-color:#29343e;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+    margin: 0;
+
+}
+
+.help-card {
+    margin: 5px;
+    text-align: center;
+}
+
+.carousel {
+    height: 250px;
+    background-color: #ffffff;
+    margin: 60px;
+    color:  #29343e;
+    
+}
+
+
+
+.carousel-item {
+    width: 50%;
+    text-align: center;
+   margin-left: 25%;
+}
+
+.quote-l {
+    text-align: left;
+}
+
+.quote-r {
+    text-align: right;
+}
+
+
+
+
 @media (min-width: 900px) {
     .homeScreen_title {
         font-size: 80px;
@@ -38,3 +104,102 @@
         padding-left: 10%;
     }
 }
+
+@media (max-width: 880px) {
+    .help {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel {
+        height: 300px;
+        margin: 5px 5px 5px 5px;
+    
+    }
+    .carousel-item {
+        width: 75%;
+        text-align: center;
+        margin-left: 10%;
+    
+    }
+   
+}
+
+@media (max-width: 630px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .about > h2 {
+        padding-top: 20px;
+        margin: auto;
+        width: 320px;
+       
+    }
+    
+    .about-para {
+        padding-top: 20px;
+        margin: auto;
+        width: 70%
+   
+    }
+    .carousel {
+        height: 300px;
+        margin: 5px 5px 20px 5px;
+    
+    }
+    .carousel-item {
+        width: 75%;
+        text-align: center;
+        margin-left: 10%;
+    
+    }
+ 
+}
+
+@media (max-width: 550px) {
+    .carousel {
+        height: 300px;
+        margin: 5px 5px 40px 5px;
+    
+    }
+    .carousel-item {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    
+    }
+
+} 
+
+@media (max-width: 450px) {
+    .carousel {
+        height: 300px;
+        margin: 5px 5px 60px 5px;
+    
+    }
+    .carousel-item {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    
+    }
+
+} 
+
+@media (max-width: 370px) {
+    .carousel {
+        height: 300px;
+        margin: 5px 5px 80px 5px;
+    
+    }
+
+    .carousel-item {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    
+    }
+    
+    }

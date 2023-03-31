@@ -28,10 +28,7 @@
     box-shadow: 0 0 10px #db4814;
   }
 
-  /* @include m.smMinBreakPoint {
-    font-size: 18px;
-    padding: 20px 25px;
-  } */
+
   
   ::placeholder { /* Firefox */
     font-weight: normal;
@@ -66,11 +63,13 @@
 }
   
 .button {
-  color: #fff;
+  color: #29343e;
   width: 100px;
   height: 40px;
   margin: auto;
   font-family: 'Varela Round', sans-serif;
   border-radius: 10px;
-  background-color: #29343e;
+  background-color:#f4f4f4 ;
+  border-style: none;
+  border: 1px solid  #29343e;
 }

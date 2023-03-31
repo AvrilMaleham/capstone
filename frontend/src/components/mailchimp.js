@@ -23,7 +23,6 @@ export const MailchimpNewsletter = (props) => {
     );
   };
   
-  //export default MailchimpNewsletter;
 
   export const MailchimpContactForm = (props) => {
     const postUrl = `https://outlook.us21.list-manage.com/subscribe/post?u=0be82fdd5ab574d0cfd70848a&id=205041509b`;
@@ -32,10 +31,9 @@ export const MailchimpNewsletter = (props) => {
       <div className="mc__form-container">
         <MailchimpSubscribe
           url={postUrl}
-          render={({ subscribe, status, message }) => (
+          render={({ subscribe }) => (
             <ContactForm
-            //   status={status}
-            //   message={message}
+           
               onValidated={(formData) => subscribe(formData)}
             />
           )}
@@ -44,7 +42,3 @@ export const MailchimpNewsletter = (props) => {
     );
   };
   
-//   module.exports = {
-//     MailchimpContactForm,
-//     MailchimpNewsletter
-// } 

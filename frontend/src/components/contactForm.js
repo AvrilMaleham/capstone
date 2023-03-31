@@ -42,7 +42,6 @@ const ContactForm = ({onValidated}) => {
     });
     setStatus("Thanks for getting in touch!");
     let result = await response.json();
-    //alert(result.status);
     onValidated({
       EMAIL: email.value,
       MERGE1: firstName.value,

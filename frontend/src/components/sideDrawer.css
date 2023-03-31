@@ -27,12 +27,17 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    padding-inline-start: 0px;
+   
 }
 
 .sideDrawer_links > li {
     display: flex;
     align-items: center;
+  
 }
+
+
 
 .sideDrawer_links > li > a {
     display: flex;
@@ -43,6 +48,7 @@
     text-decoration: none;
     color: #29343e;
     font-size: 1.6rem;
+    width:100%
 }
 
 .sideDrawer_links > li > a:hover {
@@ -70,10 +76,7 @@
     margin-left:8px;
 }
 
-/* .sideDrawer_links > li > a:hover .sideDrawer_cartbadge {
-    background-color: #f4f4f4;
-    color: #171717;
-} */
+
 
 @media (min-width: 960px) {
     .sideDrawer {

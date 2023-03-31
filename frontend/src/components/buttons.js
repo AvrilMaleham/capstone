@@ -11,3 +11,13 @@ export function BannerButton(props) {
     </div>
   );
 }
+
+export function OtherButton(props) {
+  return (
+    <div>
+      <Link className="otherButton" to={props.nav}>
+        {props.name}
+      </Link>
+    </div>
+  );
+}
