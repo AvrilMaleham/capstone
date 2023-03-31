@@ -10,12 +10,13 @@
 }
 
 .navbar_logo {
-    height: 120px;
+    height: 105px;
     width: 170px;
     cursor: pointer;
     display: flex;
     list-style: none;
     align-items: center;
+   
 }
 
 .navbar_links {

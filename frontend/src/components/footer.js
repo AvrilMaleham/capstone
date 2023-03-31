@@ -1,7 +1,7 @@
 import "./footer.css";
 import { Link } from "react-router-dom";
 
-const Footer = ({ click }) => {
+const Footer = () => {
   return (
     <footer className="footer">
       <ul className="first">

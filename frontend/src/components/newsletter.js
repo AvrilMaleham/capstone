@@ -8,7 +8,7 @@ const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  // const [button, setButton] = useState(true);
+ 
 
   useEffect(() => {
     if(status === "success") clearFields();
@@ -39,7 +39,7 @@ const Newsletter = ({ status, message, onValidated }) => {
       <h3 className="mc__title">
         {status === "success"
           ? "Success!"
-          : "Join our email list for future updates."}
+          : "Join our email list for future updates"}
       </h3>
 
       {status === "sending" && (
