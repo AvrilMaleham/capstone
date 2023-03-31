@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
+    <div >
+      <div className="break"> </div>
     <footer className="footer">
-      <ul className="first">
+
+ <ul className="first">
         <li>
         <Link to="/" className="nav_link">
             Home
@@ -22,7 +25,9 @@ const Footer = () => {
 
       <ul className="second">
         <li>
-          <span>Contact</span>
+        <Link to="/contact" className="nav_link">
+            Contact
+          </Link>
         </li>
         <li>
           <span>Phone: 021 888 462</span>
@@ -42,6 +47,7 @@ const Footer = () => {
       </ul>
 
     </footer>
+    </div>
   );
 };
 

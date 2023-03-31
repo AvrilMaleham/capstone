@@ -1,10 +1,9 @@
-.contactForm {
-    display: grid;
-    grid-template-rows: min-content min-content;
-    grid-row-gap: 20px;
-    justify-content: stretch;
-    align-items: center;
-    transition: height .2s ease;
+
+  .contactForm {
+   
+    margin: auto;
+    width: 50%;
+
   }
 
   .inputField__field {
@@ -13,13 +12,14 @@
     border: none;
     font-size: 16px;
     padding: 16px 20px;
-    margin: 0 auto;
+    margin-bottom: 20px;
     width: 100%;
-    max-width: 400px;
     font-weight: bold;
     color: #29343e;
     border-radius: 10px;
     font-family: 'Varela Round', sans-serif;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+   
   }
 
   .inputField__field:focus {
@@ -45,18 +45,9 @@
     font-weight: normal;
   }
   
-  input[disabled] {
-    background-color: #29343e;
-    cursor: default;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
-  }
 
-  input {
-    transform: scale(1);
-    background-color: #29343e;
-    cursor: pointer;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
-  }
+
+
 
 .center {
   margin: auto;
@@ -66,10 +57,22 @@
   color: #29343e;
   width: 100px;
   height: 40px;
-  margin: auto;
+  margin-bottom: 40px;
   font-family: 'Varela Round', sans-serif;
   border-radius: 10px;
   background-color:#f4f4f4 ;
   border-style: none;
   border: 1px solid  #29343e;
+  
+}
+
+.button:hover {
+  background-color: #29343e;
+  color:#f4f4f4 ;
+  }
+  
+  @media (max-width: 550px) {
+    .contactForm {
+     width: 75%;
+    }
 }
