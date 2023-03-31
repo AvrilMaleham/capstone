@@ -9,6 +9,11 @@
     z-index: 50;
 }
 
+.break {
+    height: 1px;
+    background-color: #29343e;
+}
+
 .first {
     color: #29343e;
     list-style: none;

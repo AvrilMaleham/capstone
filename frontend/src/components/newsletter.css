@@ -8,15 +8,22 @@
   
 }
    
-.g__justify-self-center {
-  color: #fff;
+.subscribeBut {
+  color: #29343e;
   width: 100px;
   height: 40px;
   margin: auto;
   font-family: 'Varela Round', sans-serif;
   border-radius: 10px;
   border-style: none;
+  background-color: #f4f4f4;
 }
+
+.subscribeBut:hover {
+  background-color: #29343e;
+  color:#f4f4f4 ;
+  border: 1px #f4f4f4 solid;
+  }
   
   /* Positions the form in the middle of the modal and ensures the content doesn't jump as status messages get added/removed */
   .mc__form-container {

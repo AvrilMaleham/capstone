@@ -60,7 +60,7 @@ const ContactForm = ({onValidated}) => {
         <br></br>
         <input placeholder="Email Address" className="inputField__field" type="email" id="email" value={email}  onChange={(e)=>setEmail(e.target.value)} required />
         <br></br>
-        <textarea placeholder="How can we help?" className="inputField__field" id="message" value={message}  onChange={(e)=>setMessage(e.target.value)} required />
+        <textarea rows="2" placeholder="How can we help?" className="inputField__field" id="message" value={message}  onChange={(e)=>setMessage(e.target.value)} required />
         <br></br>
         <button className="button" type="submit">{status}</button>
       </div>

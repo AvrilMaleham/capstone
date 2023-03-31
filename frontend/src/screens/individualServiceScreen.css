@@ -2,6 +2,7 @@
     max-width: 1300px;
     margin: 1rem auto;
     display: flex;
+    height: 110vh;
 }
 
 .individualServiceScreen_left {
@@ -27,6 +28,7 @@
     font-size: 0.9rem;
     color: #29343e;
     border-radius: 10px;
+   
 }
 
 .left_name {
@@ -34,34 +36,18 @@
     font-size: 1.3rem;
 }
 
-.left_info > p,
-.right_info > p {
+.left_info > p {
     padding: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   
 }
 
-.left_info > p:last-child,
-.right_info > p:last-child {
+.left_info > p:last-child {
     border: none;
 }
 
-.individualServiceScreen_right {
-    flex: 0.2;
-}
 
-.right_info {
-    width: 250px;
-    margin: 1rem;
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-}
 
-.right_info p {
-    padding: 1rem;
-    font-size: 0.8rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 .bookbutton {
     grid-column: 1/-1;
@@ -71,16 +57,21 @@
     color: #f4f4f4;
     border: 1px solid #29343e;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+   
+
 }
 
-.right_info select {
-    padding: 10px 16px;
+.bookbutton:hover {
+    background-color: #f4f4f4;
+    color: #29343e;
 }
+
 
 @media (max-width: 960px ) {
     .individualServiceScreen {
         flex-direction: column;
+        height: 100%;
     }
 
     .individualServiceScreen_left {
@@ -96,13 +87,6 @@
         flex: 1;
     }
 
-    .individualServiceScreen_right {
-        flex: 1;
-        padding: 1rem;
-    }
 
-    .right_info {
-        width: 100%;
-        margin: 0;
-    }
+
 }

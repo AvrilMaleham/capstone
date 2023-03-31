@@ -12,10 +12,11 @@ const Navbar = ({click}) => {
   };
 
   return (
+    <div>
     <nav className="navbar">
-      <div className="navbar_logo">
+     <Link to="/" className="navbar_logo">
         <img src={require("../assets/logo.png")} alt="logo"/>
-      </div>
+      </Link>
 
       <ul className="navbar_links">
         <li>
@@ -46,6 +47,8 @@ const Navbar = ({click}) => {
         <div></div>
       </div>
     </nav>
+
+    </div>
   );
 };
 

@@ -15,7 +15,7 @@ const NewsletterInputField = props => {
     if (props.type === "submit") {
         return (
             <input
-                className='g__justify-self-center'
+                className='subscribeBut'
                 type='submit'
                 value={props.label}
                 disabled={validateInput(props.formValues)}
