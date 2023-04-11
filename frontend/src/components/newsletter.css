@@ -5,18 +5,24 @@
   
     color: #ffffff;
     margin:auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
   
 }
    
 .subscribeBut {
   color: #29343e;
-  width: 100px;
+  width: 110px;
   height: 40px;
   margin: auto;
   font-family: 'Varela Round', sans-serif;
   border-radius: 10px;
   border-style: none;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
+  letter-spacing: 2px;
+  border: #29343e 1px solid;
 }
 
 .subscribeBut:hover {
@@ -40,8 +46,12 @@
     justify-content: center;
     align-items: center;
     transition: height .2s ease;
-    background-color: #29343e;
+    /* background-color: #29343e; */
     padding: 20px;
+    background-image: url('../assets/newsletter.jpg');
+   
+    background-size: cover;
+    background-position: 50%;
   }
   
   /* Seperates the input fields vertically */
@@ -51,6 +61,7 @@
     margin-right: 20px;
    
   }
+
 
 
   .mc__alert {
@@ -80,7 +91,9 @@
     .mc__field-container {
       display: grid;
       grid-row-gap: 30px;
-      margin: 0;
+     margin-left: 10%;
+   
+      
     }
 
     .mc__form {
@@ -90,6 +103,28 @@
       justify-content: stretch;
       align-items: center;
       transition: height .2s ease;
+     
     }
     
+}
+
+@media (max-width: 440px) {
+  .mc__field-container {
+    display: grid;
+    grid-row-gap: 30px;
+  margin: 0;
+ 
+    
+  }
+
+  .mc__form {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-row-gap: 40px;
+    justify-content: stretch;
+    align-items: center;
+    transition: height .2s ease;
+   
+  }
+  
 }

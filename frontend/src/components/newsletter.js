@@ -38,7 +38,7 @@ const Newsletter = ({ status, message, onValidated }) => {
     <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
       <h3 className="mc__title">
         {status === "success"
-          ? "Success!"
+          ? "Success"
           : "Join our email list for future updates"}
       </h3>
 
@@ -56,13 +56,15 @@ const Newsletter = ({ status, message, onValidated }) => {
         <div
           className="mc__alert mc__alert--success"
           dangerouslySetInnerHTML={{ __html: message }}
+         
+          
         />
       )}
 
       {status !== "success" ? (
         <div className="mc__field-container">
           <NewsletterInputField
-            // label="First Name"
+            className="newsletin"
             onChangeHandler={setFirstName}
             type="text"
             value={firstName}
@@ -100,7 +102,7 @@ const Newsletter = ({ status, message, onValidated }) => {
         null
       ) : (
         <NewsletterInputField
-          label="SUBSCRIBE"
+          label="Subscribe"
           type="submit"
           formValues={[email, firstName, lastName]}
         />
