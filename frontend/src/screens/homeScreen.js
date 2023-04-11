@@ -10,11 +10,13 @@ function HomeScreen() {
   return (
     <div>
       <div className="homeBanner">
-        <h1 className="homeScreen_title">Home</h1>
+  
+        <h1 className="homeScreen_title">HOME</h1>
         <div className="buttonLayout">
-          <BannerButton name="SERVICES" nav="/services"></BannerButton>
-          <BannerButton name="PRODUCTS" nav="/products"></BannerButton>
+          <BannerButton name="Services" nav="/services"></BannerButton>
+          <BannerButton name="Products" nav="/products"></BannerButton>
         </div>
+    
       </div>
 
       <div className="about">
@@ -49,7 +51,7 @@ function HomeScreen() {
             <br></br>
             <br></br>
           </p>
-          <BannerButton name="CONTACT US TODAY" nav="/contact"></BannerButton>
+          <BannerButton name="Contact Us Today" nav="/contact"></BannerButton>
         </div>
       </div>
 
@@ -58,31 +60,42 @@ function HomeScreen() {
       <div className="help">
         <Card className="help-card">
           <Card.Body>
-            <Card.Title>Checklists to Purchase</Card.Title>
+            <Card.Title className="card-title">Checklists to Purchase</Card.Title>
             <Card.Text>
-              Let us simplify your admin with our easy to use checklists.
+            We understand that property management can be a challenging task, 
+            with a wide range of responsibilities that need to be taken care of. 
+            Whether you're managing a single property or a portfolio of properties, 
+            keeping track of everything can be overwhelming. 
+            This is where our easy-to-use checklists come in.
             </Card.Text>
-            <OtherButton name="BUY NOW" nav="/products"></OtherButton>
+            <BannerButton name="BUY NOW" nav="/products"></BannerButton>
           </Card.Body>
         </Card>
 
         <Card className="help-card">
           <Card.Body>
-            <Card.Title>Inspections</Card.Title>
+            <Card.Title className="card-title">Inspections</Card.Title>
             <Card.Text>
-              Let us help you keep up to date with quarterly inspections.
+            With ongoing legislative and regulatory changes, 
+            it’s important to keep up to date with quarterly inspections. 
+            We can provide an experienced and highly trained inspections agent to complete 
+            your routine inspections on a one-off basis or via a regular schedule.
             </Card.Text>
-            <OtherButton name="BOOK NOW" nav="/services"></OtherButton>
+            <BannerButton name="BOOK NOW" nav="/services"></BannerButton>
           </Card.Body>
         </Card>
 
         <Card className="help-card">
           <Card.Body>
-            <Card.Title>Palace Software Training</Card.Title>
+            <Card.Title className="card-title">Palace Software Training</Card.Title>
             <Card.Text>
-              Let us help you get the best out of your Palace software.
+            Using the best software, MRI Palace, is the first step, but more often than not, 
+            companies do not know how to get the best out of the software, 
+            or how to use it property. We can not only help you set up best practices 
+            for you accounts and admin team, we can train you on all aspects of Palace 
+            software to ensure success in your business.
             </Card.Text>
-            <OtherButton name="FIND OUT MORE" nav="/services"></OtherButton>
+            <BannerButton name="FIND OUT MORE" nav="/services"></BannerButton>
           </Card.Body>
         </Card>
       </div>

@@ -5,7 +5,8 @@
   .input_field {
    
     background-color: #fff;
-    border: none;
+    border: #29343e 1px solid;
+  
     font-size: 16px;
     padding: 16px 20px;
     margin: 0 auto;
@@ -19,8 +20,8 @@
 
   .input_field:focus {
     outline: none !important;
-    border-color: #ffffff;
-    box-shadow: 0 0 10px #ffffff;
+    border-color: #29343e ;
+    box-shadow: 0 0 10px #29343e ;
   }
 
 

@@ -1,6 +1,6 @@
 
 .homeBanner {
-    background-image: url('../assets/homeBanner.jpeg');
+    background-image: url('../assets/homeBanner.jpg');
     height: 50vh;
     background-size: cover;
     background-position: 50%;
@@ -10,11 +10,15 @@
 .homeScreen_title {
   font-size: 50px;
  
-    color: #29343e;
+    color: #ffffff;
     margin-bottom: 1rem;
     padding-left: 8%;
     padding-top: 250px;
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
     
     
 }
@@ -22,7 +26,11 @@
 .buttonLayout {
     display: flex;
     padding-left: 8%;
+    
+
 }
+
+
 
 .about {
     display: flex;
@@ -34,6 +42,10 @@
     text-align: center;
     font-size: 5em;
     color: #29343e;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 50px;
 }
 
 .about-para {
@@ -59,12 +71,22 @@
     padding-bottom: 0px;
     width: 100%;
     margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
 
 }
 
 .help-card {
     margin: 5px;
     text-align: center;
+   
+}
+
+
+.card-title {
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 
 .carousel {
@@ -97,7 +119,7 @@
 @media (min-width: 900px) {
     .homeScreen_title {
         font-size: 80px;
-        padding-top: 200px;
+        padding-top: 210px;
         padding-left: 10%;
     }
     .buttonLayout {
@@ -105,17 +127,22 @@
     }
 }
 
+@media (min-width: 881px){
+    .help-card {
+       
+       width: 33%;
+}
+}
+
+
+
 @media (max-width: 880px) {
     .help {
         display: flex;
         flex-direction: column;
     }
 
-    .carousel {
-        height: 300px;
-        margin: 5px 5px 5px 5px;
-    
-    }
+
     .carousel-item {
         width: 75%;
         text-align: center;
@@ -125,7 +152,7 @@
    
 }
 
-@media (max-width: 630px) {
+@media (max-width: 676px) {
     .about {
         display: flex;
         flex-direction: column;
@@ -203,3 +230,5 @@
     }
     
     }
+
+  
