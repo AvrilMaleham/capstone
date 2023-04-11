@@ -17,7 +17,7 @@
     color: #29343e;
     margin-bottom: 1rem;
     padding-left: 10%;
-    padding-top: 250px;
+    padding-top: 210px;
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     
     
@@ -35,7 +35,7 @@
 @media (max-width: 900px) {
     .servicesScreen_title {
         font-size: 50px;
-        padding-top: 280px;
+        padding-top: 250px;
         padding-left: 8%;
     }
     .buttonLayout {
