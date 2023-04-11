@@ -65,7 +65,7 @@ const ContactForm = ({onValidated}) => {
         <button className="button" type="submit">{status}</button>
       </div>
        
-       ) : <p>Thank you for getting in touch!</p> }
+       ) : <p className="thankMSG">Thanks for getting in touch!</p> }
      
      
     </form>
