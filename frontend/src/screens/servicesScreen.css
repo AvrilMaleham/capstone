@@ -12,11 +12,11 @@
 }
 
 .servicesScreen_title {
-  font-size: 50px;
+  font-size: 80px;
  
     color: #29343e;
     margin-bottom: 1rem;
-    padding-left: 8%;
+    padding-left: 10%;
     padding-top: 250px;
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     
@@ -25,21 +25,21 @@
 
 .buttonLayout {
     display: flex;
-    padding-left: 8%;
+    padding-left: 10%;
 }
 
 .servicesScreen_products {
   margin-bottom: 30px;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
     .servicesScreen_title {
-        font-size: 80px;
-        padding-top: 200px;
-        padding-left: 10%;
+        font-size: 50px;
+        padding-top: 280px;
+        padding-left: 8%;
     }
     .buttonLayout {
-        padding-left: 10%;
+        padding-left: 8%;
     }
 }
 

@@ -1,11 +1,20 @@
 .contactScreen_title {
   font-size: 3rem;
-  background-color: #29343e;
-  color: #ffffff;
+  background-color: #ffffff;
+  
+  color: #29343e;
   margin: auto;
   text-align: center;
   padding: 10px;
+  font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+   
 }
+
+
+
 
 .contact-deets {
  
@@ -13,6 +22,9 @@
   text-align: center;
   padding: 40px;
   width: 100%;
+  font-weight: bold;
+    letter-spacing: 2px;
+  
 
 }
 
@@ -24,7 +36,11 @@
 
 }
 
-@media (max-width: 610px) {
+.contact-deets > a:hover {
+  color: #db4814;
+}
+
+@media (max-width: 770px) {
     .contact-deets > a {
       display: flex;
       flex-direction: column;

@@ -36,6 +36,16 @@
     color: #29343e;
 }
 
+.number {
+
+        text-decoration: none;
+        color: #29343e;
+  
+}
+
+.number:hover {
+    color: #db4814;
+}
 
 @media (max-width: 700px) {
     .footer {

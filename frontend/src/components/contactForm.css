@@ -24,8 +24,8 @@
 
   .inputField__field:focus {
     outline: none !important;
-    border-color: #db4814;
-    box-shadow: 0 0 10px #db4814;
+    border-color: #29343e;
+    box-shadow: 0 0 10px #29343e;
   }
 
 
@@ -60,10 +60,18 @@
   margin-bottom: 40px;
   font-family: 'Varela Round', sans-serif;
   border-radius: 10px;
-  background-color:#f4f4f4 ;
+  background-color:#ffffff ;
   border-style: none;
   border: 1px solid  #29343e;
+
+    letter-spacing: 2px;
   
+}
+
+.thankMSG {
+
+  text-align: center;
+
 }
 
 .button:hover {
