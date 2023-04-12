@@ -65,7 +65,7 @@ useEffect(() => {
             "currency":
             "NZD",
         }}>
-      <button onClick={() => setHide(true)} type="submit">
+      <button className="checkout" onClick={() => setHide(true)} type="submit">
         CHECKOUT
       </button>
       {hide ? (

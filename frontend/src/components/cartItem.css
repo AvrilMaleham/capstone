@@ -5,9 +5,10 @@
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     gap: 8px;
     background-color: #fff;
-    border-radius: 10px;
+    
     place-items: center;
     margin-bottom: 8px;
+    border-bottom: #e0e0e0 solid 1px;
 }
 
 .cartItem_name {
