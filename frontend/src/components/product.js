@@ -42,7 +42,7 @@ const Product = ({ imageUrl, name, price, productId }) => {
         <p className="info_price">${price} + GST</p>
 
         <p>
-          <button className="info_button" type="button" onClick={addToCartHandler}>
+          <button className="addtocart_button" type="button" onClick={addToCartHandler}>
 
             ADD TO CART 
           </button>
