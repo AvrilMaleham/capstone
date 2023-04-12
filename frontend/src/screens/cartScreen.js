@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 //Components
 import CartItem from "../components/cartItem";
 import MyPayPal from "../components/payPalButton";
+import { OtherButton } from "../components/buttons";
 
 //Actions
 import { addToCart, removeFromCart, resetCart } from "../redux/actions/cartActions";
@@ -49,11 +50,18 @@ const CartScreen = () => {
   let info = cartItems.map(a => a.name);
 
   return (
+    <div>
+       <div className="break"> </div>
+  
     <div className="cartScreen">
+     
       <div className="cartScreen_left">
         {cartItems.length === 0 ? (
-          <div>
-            Your cart is empty <Link to="/products">Go Back</Link>
+          <div> 
+          <div className="empty">
+            Your cart is currently empty.
+          </div>
+          <OtherButton name="GO BACK" nav="/products"></OtherButton> 
           </div>
         ) : (
           cartItems.map((item) => (
@@ -68,19 +76,33 @@ const CartScreen = () => {
       </div>
 
       <div className="cartScreen_right">
+        {cartItems.length === 0 ? ( 
         <div className="cartScreen_info">
-          <p>Subtotal ({getCartCount()}) items</p>
+          <p className="sub">Subtotal ({getCartCount()}) items</p>
           <p>${getCartSubTotal().toFixed(2)}</p>
-          <p>GST</p>
+          <p className="sub">GST</p>
           <p>${gst().toFixed(2)}</p>
-          <p>Total</p>
+          <p className="sub">Total</p>
           <p>${total().toFixed(2)}</p>
         </div>
+        ) : (
+          <div className="cartScreen_info">
+           <Link to="/products" className="cntshop">Continue Shopping &#x2192; </Link>
+          <p className="sub">Subtotal ({getCartCount()}) items</p>
+          <p>${getCartSubTotal().toFixed(2)}</p>
+          <p className="sub">GST</p>
+          <p>${gst().toFixed(2)}</p>
+          <p className="sub">Total</p>
+          <p>${total().toFixed(2)}</p>
+        </div>
+
+          )}
         <MyPayPal total={total()} 
           reset={resetHandler}
         input={info} 
           />
       </div>
+    </div>
     </div>
   );
 };
