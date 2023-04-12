@@ -20,13 +20,13 @@ const ProductScreen = () => {
   }, [dispatch]);
 
   return (
-    <div className="homeScreen">
+    <div className="productScreen">
      
       <div className="productBanner">
-        <h1 className="productScreen_title">Our Products</h1>
+        <h1 className="productScreen_title">PRODUCTS</h1>
         <div className="buttonLayout">
-<BannerButton name="SERVICES" nav="/services" ></BannerButton>
-<BannerButton name="CONTACT" nav="/contact" ></BannerButton>
+<BannerButton name="Services" nav="/services" ></BannerButton>
+<BannerButton name="Contact" nav="/contact" ></BannerButton>
         </div>
       </div>
      
@@ -44,7 +44,7 @@ const ProductScreen = () => {
               productId={product._id}
               name={product.name}
               price={product.price}
-              description={product.description}
+            // description={product.description}  
               imageUrl={product.imageUrl}
             />
           ))

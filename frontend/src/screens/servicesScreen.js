@@ -23,10 +23,10 @@ const ServicesScreen = () => {
     <div className="servicesScreen">
 
       <div className="servicesBanner">
-        <h1 className="servicesScreen_title">Our Services</h1>
+        <h1 className="servicesScreen_title">SERVICES</h1>
         <div className="buttonLayout">
-<BannerButton name="PRODUCTS" nav="/products" ></BannerButton>
-<BannerButton name="CONTACT" nav="/contact" ></BannerButton>
+<BannerButton name="Products" nav="/products" ></BannerButton>
+<BannerButton name="Contact" nav="/contact" ></BannerButton>
         </div>
 
       </div>
