@@ -74,6 +74,7 @@ useEffect(() => {
           createOrder={createOrder}
           onApprove={onApprove}
           onError={onError}
+          className="palbut"
         />
       ) : null}
       </PayPalScriptProvider>

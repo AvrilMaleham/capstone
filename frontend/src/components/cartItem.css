@@ -34,6 +34,7 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
     border-radius: 50%;
+    font-size: 15px;
 }
 
 .cartItem_deleteButton:hover,
@@ -47,9 +48,10 @@
         font-size: 0.8rem;
     }
 
-    .cartItem_select,
+    /* .cartItem_select, */
     .cartItem_deleteButton {
-        padding: 8px 13px;
+        padding: 7px 14px;
+        font-size: 13px;
     }
 
     .cartItem_price {
@@ -62,9 +64,10 @@
         font-size: 0.6rem;
     }
 
-    .cartItem_select,
+    /* .cartItem_select, */
     .cartItem_deleteButton {
-        padding: 5px 8px;
+        padding: 4px 10px;
+        font-size: 11px;
     }
 
     .cartItem_price {
