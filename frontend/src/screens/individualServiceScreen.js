@@ -28,9 +28,9 @@ const IndividualServiceScreen = () => {
     }
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
 
      const bookButtonHandler = () => {
@@ -55,10 +55,13 @@ const IndividualServiceScreen = () => {
 
             <div className="left_info">
               <p className="left_name">{service.name}</p>
-              <p>{service.description} </p>
+              <p>{service.paraone} </p>
+              <p>{service.paratwo} </p>
+              <p>{service.parathree} </p>
+              <p>{service.parafour} </p>
             </div>
 
-            <div>
+            <div className="middle">
 
       {book ? (
        <PopupButton className="bookbutton"

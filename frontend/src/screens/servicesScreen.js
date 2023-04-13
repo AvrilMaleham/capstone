@@ -41,7 +41,7 @@ const ServicesScreen = () => {
               key={service._id}
               serviceId={service._id}
               name={service.name}
-              description={service.description}
+              paraone={service.paraone}
               imageUrl={service.imageUrl}
             />
           ))
