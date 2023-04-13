@@ -89,11 +89,11 @@ const CartScreen = () => {
           <div className="cartScreen_info">
            <Link to="/products" className="cntshop">Continue Shopping &#x2192; </Link>
           <p className="sub">Subtotal ({getCartCount()}) items</p>
-          <p>${getCartSubTotal().toFixed(2)}</p>
+          <p className="deets">${getCartSubTotal().toFixed(2)}</p>
           <p className="sub">GST</p>
-          <p>${gst().toFixed(2)}</p>
+          <p  className="deets">${gst().toFixed(2)}</p>
           <p className="sub">Total</p>
-          <p>${total().toFixed(2)}</p>
+          <p  className="deets">${total().toFixed(2)}</p>
         </div>
 
           )}

@@ -59,12 +59,11 @@
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 410px) {
     .cartItem_name {
         font-size: 0.6rem;
     }
 
-    /* .cartItem_select, */
     .cartItem_deleteButton {
         padding: 4px 10px;
         font-size: 11px;
