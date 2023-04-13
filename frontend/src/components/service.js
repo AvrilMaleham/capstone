@@ -1,7 +1,7 @@
 import './service.css'
 import {Link} from 'react-router-dom';
 
-const Service = ({imageUrl, name, description, serviceId}) => {
+const Service = ({imageUrl, name, paraone, serviceId}) => {
     return (
     <div className='service'>
 
@@ -12,7 +12,7 @@ const Service = ({imageUrl, name, description, serviceId}) => {
         <div className="service_info" >
             <p className="info_name" >{name}</p>
             <p className="info_description" >
-            {description.substring(0, 100)}...
+            {paraone.substring(0, 100)}...
             </p>
 
             

@@ -5,9 +5,21 @@ const serviceSchema = mongoose.Schema({
         type: String,
         required: true,
     },
-    description: {
+    paraone: {
         type: String,
         required: true,
+    },
+    paratwo: {
+        type: String,
+       
+    },
+    parathree: {
+        type: String,
+      
+    },
+    parafour: {
+        type: String,
+       
     },
     imageUrl: {
         type: String,
