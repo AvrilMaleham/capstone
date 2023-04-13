@@ -40,7 +40,7 @@
   color: #db4814;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
     .contact-deets > a {
       display: flex;
       flex-direction: column;

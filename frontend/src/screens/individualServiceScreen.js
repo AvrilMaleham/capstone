@@ -28,6 +28,10 @@ const IndividualServiceScreen = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
      const bookButtonHandler = () => {
       service.name === "Inspections" ? setBook(true) : setBook(false);
@@ -35,6 +39,8 @@ const IndividualServiceScreen = () => {
 
 
   return (
+    <div>
+    <div className="break"> </div>
     <div className="individualServiceScreen" onLoad={bookButtonHandler}>
       {loading ? (
         <h2>Loading...</h2>
@@ -70,6 +76,7 @@ const IndividualServiceScreen = () => {
           </div>
         </>
       )}
+    </div>
     </div>
   );
 };
