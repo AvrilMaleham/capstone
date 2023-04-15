@@ -1,61 +1,99 @@
-
 .productBanner {
-    background-image: url('../assets/productsBanner.jpg');
-    height: 50vh;
-    background-size: cover;
-    background-position: 50%;
-    margin-bottom: 30px;
+  background-image: url("../assets/productsBanner.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 30px;
 }
 
 .productScreen_title {
   font-size: 80px;
- 
-    color: #ffffff;
-    margin-bottom: 1rem;
-    padding-left: 10%;
-    padding-top: 33vh;
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-    font-family: sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    
+
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-left: 10%;
+  padding-top: 33vh;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .buttonLayout {
-    display: flex;
-    padding-left: 10%;
+  display: flex;
+  padding-left: 10%;
 }
 
 @media (max-width: 900px) {
-    .productScreen_title {
-        font-size: 50px;
-        padding-top: 38vh;
-        padding-left: 8%;
-    }
-    .buttonLayout {
-        padding-left: 8%;
-    }
+  .productScreen_title {
+    font-size: 50px;
+    padding-top: 38vh;
+    padding-left: 8%;
+  }
+  .buttonLayout {
+    padding-left: 8%;
+  }
 }
 
 .homeScreen_products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 1232px) {
-    .homeScreen_products {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .homeScreen_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 950px) {
-    .homeScreen_products {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .homeScreen_products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 630px) {
-    .homeScreen_products {
-        grid-template-columns: 1fr;
-    }
+  .homeScreen_products {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-height: 740px) {
+  .productScreen_title {
+    padding-top: 30vh;
+  }
+}
+
+@media (max-height: 610px) {
+  .productScreen_title {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 610px) {
+  .productScreen_title {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 410px) {
+  .productScreen_title {
+    padding-top: 10vh;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 740px) {
+  .productScreen_title {
+    font-size: 50px;
+    padding-top: 30vh;
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 410px) {
+  .productScreen_title {
+    font-size: 50px;
+    padding-top: 20vh;
+    padding-left: 8%;
+  }
 }

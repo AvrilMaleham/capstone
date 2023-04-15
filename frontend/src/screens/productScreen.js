@@ -19,6 +19,10 @@ const ProductScreen = () => {
     dispatch(listProducts());
   }, [dispatch]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="productScreen">
      
@@ -30,7 +34,11 @@ const ProductScreen = () => {
         </div>
       </div>
      
+      <p className="servicespara">Purchase our checklists and workflows so your team never misses a step again. <br>
+      </br>
+      Keep your entire team on the same page, and consistency for your clients. 
 
+</p>
 
       <div className="homeScreen_products">
         {loading ? (

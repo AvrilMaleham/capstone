@@ -1,236 +1,233 @@
-
 .homeBanner {
-    background-image: url('../assets/homeBanner.jpg');
-    height: 50vh;
-    background-size: cover;
-    background-position: 50%;
-    
+  background-image: url("../assets/homeBanner.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .homeScreen_title {
   font-size: 80px;
- 
-    color: #ffffff;
-    margin-bottom: 1rem;
-    padding-left: 10%;
-    padding-top: 33vh;
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-    font-family: sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    
-    
-    
+
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-left: 10%;
+  padding-top: 33vh;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .buttonLayout {
-    display: flex;
-    padding-left: 10%;
-
-   
-    
-
+  display: flex;
+  padding-left: 10%;
 }
 
-
-
 .about {
-    display: flex;
+  display: flex;
 }
 
 .about > h2 {
-    width: 40%;
-    margin: 40px;
-    text-align: center;
-    font-size: 5em;
-    color: #29343e;
-    font-family: sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-top: 50px;
+  width: 40%;
+  margin: 40px;
+  text-align: center;
+  font-size: 5em;
+  color: #29343e;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-top: 50px;
 }
 
 .about-para {
-    width: 60%;
-    margin: 50px;
-    text-align: center;
-    color: #29343e;
+  width: 60%;
+  margin: 50px;
+  text-align: center;
+  color: #29343e;
 }
 
 .help {
-   display: flex;
-    background-color:#29343e;
-    padding: 20px;
-  
+  display: flex;
+  background-color: #29343e;
+  padding: 20px;
 }
 
 .help-title {
-    color: #ffffff;
-    font-size: 2em;
-    background-color:#29343e;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    width: 100%;
-    margin: 0;
-    font-family: sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-
+  color: #ffffff;
+  font-size: 2em;
+  background-color: #29343e;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .help-card {
-    margin: 5px;
-    text-align: center;
-   
+  margin: 5px;
+  text-align: center;
 }
 
-
 .card-title {
-    letter-spacing: 2px;
-    font-weight: 900;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
 
 .carousel {
-    height: 250px;
-    background-color: #ffffff;
-    margin: 60px;
-    color:  #29343e;
-    
+  height: 250px;
+  background-color: #ffffff;
+  margin: 60px;
+  color: #29343e;
 }
 
-
-
 .carousel-item {
-    width: 50%;
-    text-align: center;
-   margin-left: 25%;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
 }
 
 .quote-l {
-    text-align: left;
+  text-align: left;
 }
 
 .quote-r {
-    text-align: right;
+  text-align: right;
 }
-
-
-
 
 @media (max-width: 900px) {
-    .homeScreen_title {
-        font-size: 50px;
-padding-top: 38vh;;
-        padding-left: 8%;
-    }
-    .buttonLayout {
-        padding-left: 8%;
-    }
+  .homeScreen_title {
+    font-size: 50px;
+    padding-top: 38vh;
+    padding-left: 8%;
+  }
+  .buttonLayout {
+    padding-left: 8%;
+  }
 }
 
-@media (min-width: 881px){
-    .help-card {
-       
-       width: 33%;
+@media (min-width: 881px) {
+  .help-card {
+    width: 33%;
+  }
 }
-}
-
-
 
 @media (max-width: 880px) {
-    .help {
-        display: flex;
-        flex-direction: column;
-    }
+  .help {
+    display: flex;
+    flex-direction: column;
+  }
 
-
-    .carousel-item {
-        width: 75%;
-        text-align: center;
-        margin-left: 10%;
-    
-    }
-   
+  .carousel-item {
+    width: 75%;
+    text-align: center;
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 676px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    .about > h2 {
-        padding-top: 20px;
-        margin: auto;
-        width: 320px;
-       
-    }
-    
-    .about-para {
-        padding-top: 20px;
-        margin: auto;
-        width: 70%
-   
-    }
-    .carousel {
-        height: 300px;
-        margin: 5px 5px 20px 5px;
-    
-    }
-    .carousel-item {
-        width: 75%;
-        text-align: center;
-        margin-left: 10%;
-    
-    }
- 
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .about > h2 {
+    padding-top: 20px;
+    margin: auto;
+    width: 320px;
+  }
+
+  .about-para {
+    padding-top: 20px;
+    margin: auto;
+    width: 70%;
+  }
+  .carousel {
+    height: 300px;
+    margin: 5px 5px 20px 5px;
+  }
+  .carousel-item {
+    width: 75%;
+    text-align: center;
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 550px) {
-    .carousel {
-        height: 300px;
-        margin: 5px 5px 40px 5px;
-    
-    }
-    .carousel-item {
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-    
-    }
-
-} 
+  .carousel {
+    height: 300px;
+    margin: 5px 5px 40px 5px;
+  }
+  .carousel-item {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
 
 @media (max-width: 450px) {
-    .carousel {
-        height: 300px;
-        margin: 5px 5px 60px 5px;
-    
-    }
-    .carousel-item {
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-    
-    }
-
-} 
+  .carousel {
+    height: 300px;
+    margin: 5px 5px 60px 5px;
+  }
+  .carousel-item {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
 
 @media (max-width: 370px) {
-    .carousel {
-        height: 300px;
-        margin: 5px 5px 80px 5px;
-    
-    }
+  .carousel {
+    height: 300px;
+    margin: 5px 5px 80px 5px;
+  }
 
-    .carousel-item {
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-    
-    }
-    
-    }
+  .carousel-item {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
 
-  
+@media (max-height: 740px) {
+  .homeScreen_title {
+    padding-top: 30vh;
+  }
+}
+
+@media (max-height: 610px) {
+  .homeScreen_title {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 610px) {
+  .homeScreen_title {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-height: 410px) {
+  .homeScreen_title {
+    padding-top: 10vh;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 740px) {
+  .homeScreen_title {
+    font-size: 50px;
+    padding-top: 30vh;
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 410px) {
+  .homeScreen_title {
+    font-size: 50px;
+    padding-top: 20vh;
+    padding-left: 8%;
+  }
+}
