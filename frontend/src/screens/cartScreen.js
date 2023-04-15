@@ -1,6 +1,7 @@
 import "./cartScreen.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 //Components
 import CartItem from "../components/cartItem";
@@ -48,6 +49,11 @@ const CartScreen = () => {
 
 
   let info = cartItems.map(a => a.name);
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div>

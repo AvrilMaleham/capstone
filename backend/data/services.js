@@ -10,14 +10,20 @@ const services = [
       parathree:  
         "This is why and where a business health check becomes vitally important.  To create long term success in our businesses we need to check in with where we are at.", 
       parafour:  
-        "At Edify, our business health check, or audits, are a little different. We not only review the business’s individual moving parts, we take an informed, professional and holistic look at the business as a whole. We can then establish the best plan to move you forward with your short, medium and long term business goals.",
+        "At Edify, our business health check, or audits, are a little different. We not only review the business’s individual moving parts, we take an informed, professional and holistic look at the business as a whole. We can then establish the best plan to move you forward with your short, medium and long term business goals."
     },
     {
       name: "Inspections",
       imageUrl:
         "https://burst.shopifycdn.com/photos/coworkers-looking-at-mobile-device.jpg?width=1850&format=pjpg&exif=1&iptc=1",
       paraone:
-       "With ongoing legislative and regulatory changes, it’s important to keep up to date with quarterly inspections.  We can provide an experienced and highly trained inspections agent to complete your routine inspections on a one-off basis or via a regular schedule.",
+       "As a property owner or manager, it is crucial to stay up-to-date with the latest legislative and regulatory changes in your industry. Quarterly inspections are a necessary part of maintaining your property and ensuring that it meets all legal requirements. However, it can be challenging to find the time and resources to conduct these inspections regularly.",
+      paratwo:
+       "At Edify, we understand the importance of routine inspections and have a team of experienced and highly trained inspections agents who can help. We can provide a one-off inspection service or set up a regular schedule to ensure that your properties are always in compliance with the latest regulations.",
+      parathree:
+        "Our inspections agents have an in-depth knowledge of the industry and are familiar with all the latest legislative and regulatory requirements. They can identify any potential issues or areas of concern and provide you with a detailed report of their findings.",
+      parafour: 
+      "In addition to providing you with a comprehensive inspection service, we also offer ongoing support and advice. Our team is always on hand to answer any questions you may have and provide you with the guidance you need to stay ahead of the curve.",
     },
     {
       name: "Team Training",
@@ -37,7 +43,13 @@ const services = [
       imageUrl:
         "https://burst.shopifycdn.com/photos/woman-taking-notes-during-team-meeting.jpg?width=1850&format=pjpg&exif=1&iptc=1",
       paraone:
-        "Using the best software, MRI Palace, is the first step, but more often than not, companies do not know how to get the best out of the software, or how to use it property. We can not only help you set up best practices for you accounts and admin team, we can train you on all aspects of Palace software to ensure success in your business.",
+        "Investing in high-quality software, such as MRI Palace, is a crucial first step for any business looking to streamline their operations and improve their overall efficiency. However, simply having access to this software is not enough - it's equally important to understand how to use it properly to achieve the best possible results.",  
+      paratwo:
+        "At Edify, we not only provide access to the best software, but also offer comprehensive training and support to ensure that you are able to leverage its full capabilities. Our team of experts can work closely with your team to establish best practices and develop a customized approach that is tailored to your unique needs and requirements.",
+      parathree:
+        "We understand that every business is different, and that's why we take a personalized approach to training and support. Whether you are just starting out with MRI Palace, or are looking to optimize your existing setup, our team has the knowledge and expertise needed to guide you every step of the way.",
+      parafour: 
+        "Our comprehensive training programs cover all aspects of the software, from basic setup and configuration to advanced features and functionality. We can provide you with the tools and resources needed to succeed in your business.", 
     },
     {
       name: "Policy and Process/ Workflow Best Practice Implementation",

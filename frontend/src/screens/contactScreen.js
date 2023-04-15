@@ -1,9 +1,13 @@
 import "./contactScreen.css";
+import { useEffect } from "react";
 
 //components
 import {MailchimpNewsletter, MailchimpContactForm} from "../components/mailchimp";
 
 function ContactScreen() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
   <div className="break"> </div>
@@ -14,7 +18,7 @@ function ContactScreen() {
 
 
 <div className="contact-deets">
-   <a href="tel:0277788523">027 7788 523</a>
+   <a href="tel:0277788523">021 888 462</a>
    <a href="mailto:avrilm.1@hotmail.co.uk" target="_top">info@edifypmconsulting.com</a>
 </div>
 

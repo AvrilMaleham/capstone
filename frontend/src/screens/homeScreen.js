@@ -1,5 +1,7 @@
 import "./homeScreen.css";
 
+import { useEffect } from "react";
+
 import { MailchimpNewsletter } from "../components/mailchimp";
 import { BannerButton, OtherButton } from "../components/buttons";
 
@@ -7,6 +9,9 @@ import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 
 function HomeScreen() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <div className="homeBanner">
