@@ -18,8 +18,8 @@ function ContactScreen() {
 
 
 <div className="contact-deets">
-   <a href="tel:0277788523">021 888 462</a>
-   <a href="mailto:avrilm.1@hotmail.co.uk" target="_top">info@edifypmconsulting.com</a>
+   <a href="tel:021888462">021 888 462</a>
+   <a href="mailto:info@edifypmconsulting.com" target="_top">info@edifypmconsulting.com</a>
 </div>
 
 
