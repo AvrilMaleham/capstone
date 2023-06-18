@@ -79,6 +79,10 @@
   margin-left: -6px;
 }
 
+#smart-menu {
+  padding: 0px;
+}
+
 .checkout:hover {
   background-color: #29343e;
   color: #fff;

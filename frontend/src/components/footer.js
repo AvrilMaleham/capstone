@@ -30,10 +30,10 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <span >Phone: <a className="number" href="tel:0277788523">021 888 462</a></span>
+          <span >Phone: <a className="number" href="tel:021888462">021 888 462</a></span>
         </li>
         <li>
-          <span>Email: <a className="number" href="mailto:avrilm.1@hotmail.co.uk" target="_top">info@edifypmconsulting.com</a></span>
+          <span>Email: <a className="number" href="mailto:info@edifypmconsulting.com" target="_top">info@edifypmconsulting.com</a></span>
         </li>
       </ul>
 
