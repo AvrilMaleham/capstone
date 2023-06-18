@@ -1,75 +1,71 @@
 .cartItem {
-    width: 100%;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
-    gap: 8px;
-    background-color: #fff;
-    
-    place-items: center;
-    margin-bottom: 8px;
-    border-bottom: #e0e0e0 solid 1px;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  gap: 8px;
+  background-color: #fff;
+  place-items: center;
+  margin-bottom: 8px;
+  border-bottom: #e0e0e0 solid 1px;
 }
 
 .cartItem_name {
-    text-decoration: none;
-    color: #29343e;
+  text-decoration: none;
+  color: #29343e;
 }
 
 .cartItem_price {
-    color: #29343e;
+  color: #29343e;
 }
 
-
 .cartItem_select {
-    padding: 10px 17px;
-
+  padding: 10px 17px;
 }
 
 .cartItem_deleteButton {
-    padding: 10px 17px;
-    color: #29343e;
-    background-color: #f4f4f4;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    border-radius: 50%;
-    font-size: 15px;
+  padding: 10px 17px;
+  color: #29343e;
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border-radius: 50%;
+  font-size: 15px;
 }
 
 .cartItem_deleteButton:hover,
 .cartItem_deleteButton:focus,
 .cartItem_deleteButton:active {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media (max-width: 700px) {
-    .cartItem_name {
-        font-size: 0.8rem;
-    }
+  .cartItem_name {
+    font-size: 0.8rem;
+  }
 
-    
-    .cartItem_deleteButton {
-        padding: 7px 14px;
-        font-size: 13px;
-    }
+  .cartItem_deleteButton {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
 
-    .cartItem_price {
-        font-size: 0.8rem;
-    }
+  .cartItem_price {
+    font-size: 0.8rem;
+  }
 }
 
-@media(max-width: 410px) {
-    .cartItem_name {
-        font-size: 0.6rem;
-    }
+@media (max-width: 410px) {
+  .cartItem_name {
+    font-size: 0.6rem;
+  }
 
-    .cartItem_deleteButton {
-        padding: 4px 10px;
-        font-size: 11px;
-    }
+  .cartItem_deleteButton {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
 
-    .cartItem_price {
-        font-size: 0.6rem;
-    }
+  .cartItem_price {
+    font-size: 0.6rem;
+  }
 }
