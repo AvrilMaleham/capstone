@@ -7,11 +7,14 @@ const CartItem = ({ item, removeHandler }) => {
         <img src={item.imageUrl} alt={item.name} />
       </div>
 
-<p className="cartItem_name">{item.name}</p>
+      <p className="cartItem_name">{item.name}</p>
 
       <p className="cartItem_price"> ${item.price}</p>
 
-      <button className="cartItem_deleteButton" onClick={() => removeHandler(item.product)}>
+      <button
+        className="cartItem_deleteButton"
+        onClick={() => removeHandler(item.product)}
+      >
         x
       </button>
     </div>

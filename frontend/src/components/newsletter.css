@@ -1,23 +1,19 @@
-/* Styles the h3 */
 .mc__title {
-    
-    text-align: center;
-  
-    color: #ffffff;
-    margin:auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-  
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
 }
-   
+
 .subscribeBut {
   color: #29343e;
   width: 110px;
   height: 40px;
   margin: auto;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   border-radius: 10px;
   border-style: none;
   background-color: #ffffff;
@@ -27,94 +23,62 @@
 
 .subscribeBut:hover {
   background-color: #29343e;
-  color:#f4f4f4 ;
+  color: #f4f4f4;
   border: 1px #f4f4f4 solid;
-  }
-  
-  /* Positions the form in the middle of the modal and ensures the content doesn't jump as status messages get added/removed */
-  .mc__form-container {
-    width: 100%;
-    margin: auto;
-    transition: height .2s ease;
-  }
-  
-  /* Positions Text and form fields nicely in the middle with some spacing. */
-  .mc__form {
-    display: grid;
-    grid-template-rows: min-content min-content;
-    grid-row-gap: 20px;
-    justify-content: center;
-    align-items: center;
-    transition: height .2s ease;
-    /* background-color: #29343e; */
-    padding: 20px;
-    background-image: url('../assets/newsletter.jpg');
-   
-    background-size: cover;
-    background-position: 50%;
-  }
-  
-  /* Seperates the input fields vertically */
-  .mc__field-container {
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-   
-  }
-
-
-
-  .mc__alert {
-    text-align: center;
-    color: #fff;
-
-  }
-    
-  @-webkit-keyframes fade-loop {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fade-loop {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @media (max-width: 560px) {
-    .mc__field-container {
-      display: grid;
-      grid-row-gap: 30px;
-     margin-left: 10%;
-   
-      
-    }
-
-    .mc__form {
-      display: grid;
-      grid-template-rows: min-content min-content;
-      grid-row-gap: 40px;
-      justify-content: stretch;
-      align-items: center;
-      transition: height .2s ease;
-     
-    }
-    
 }
 
-@media (max-width: 440px) {
+.mc__form-container {
+  width: 100%;
+  margin: auto;
+  transition: height 0.2s ease;
+}
+
+.mc__form {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+  padding: 20px;
+  background-image: url("../assets/newsletter.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.mc__field-container {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mc__alert {
+  text-align: center;
+  color: #fff;
+}
+
+@-webkit-keyframes fade-loop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-loop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 560px) {
   .mc__field-container {
     display: grid;
     grid-row-gap: 30px;
-  margin: 0;
- 
-    
+    margin-left: 10%;
   }
 
   .mc__form {
@@ -123,8 +87,23 @@
     grid-row-gap: 40px;
     justify-content: stretch;
     align-items: center;
-    transition: height .2s ease;
-   
+    transition: height 0.2s ease;
   }
-  
+}
+
+@media (max-width: 440px) {
+  .mc__field-container {
+    display: grid;
+    grid-row-gap: 30px;
+    margin: 0;
+  }
+
+  .mc__form {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-row-gap: 40px;
+    justify-content: stretch;
+    align-items: center;
+    transition: height 0.2s ease;
+  }
 }

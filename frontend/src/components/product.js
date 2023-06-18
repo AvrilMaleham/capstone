@@ -2,13 +2,12 @@ import "./product.css";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-//Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
 import { useNavigate } from "react-router-dom";
 
 const Product = ({ imageUrl, name, price, productId }) => {
- const id = productId;
+  const id = productId;
 
   const navigate = useNavigate();
 
@@ -31,20 +30,20 @@ const Product = ({ imageUrl, name, price, productId }) => {
 
   return (
     <div className="product">
- 
       <img src={process.env.PUBLIC_URL + imageUrl} />
-      
 
       <div className="product_info">
         <p className="info_name">{name}</p>
-        
 
         <p className="info_price">${price} + GST</p>
 
         <p>
-          <button className="addtocart_button" type="button" onClick={addToCartHandler}>
-
-            ADD TO CART 
+          <button
+            className="addtocart_button"
+            type="button"
+            onClick={addToCartHandler}
+          >
+            ADD TO CART
           </button>
         </p>
       </div>

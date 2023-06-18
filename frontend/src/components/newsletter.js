@@ -3,23 +3,20 @@ import "./newsletter.css";
 
 import NewsletterInputField from "./newsletterInputField.js";
 
-
 const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
- 
 
   useEffect(() => {
-    if(status === "success") clearFields();
-  }, [status])
+    if (status === "success") clearFields();
+  }, [status]);
 
   const clearFields = () => {
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-  }
-
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,8 +53,6 @@ const Newsletter = ({ status, message, onValidated }) => {
         <div
           className="mc__alert mc__alert--success"
           dangerouslySetInnerHTML={{ __html: message }}
-         
-          
         />
       )}
 
@@ -73,7 +68,6 @@ const Newsletter = ({ status, message, onValidated }) => {
           />
 
           <NewsletterInputField
-            // label="Last Name"
             onChangeHandler={setLastName}
             type="text"
             value={lastName}
@@ -82,7 +76,6 @@ const Newsletter = ({ status, message, onValidated }) => {
           />
 
           <NewsletterInputField
-            // label="Email"
             onChangeHandler={setEmail}
             type="email"
             value={email}
@@ -92,15 +85,7 @@ const Newsletter = ({ status, message, onValidated }) => {
         </div>
       ) : null}
 
-      {status === "success" ? (
-        // <button
-        //   onClick={() => setButton(false)}
-        //   className="g__justify-self-center"
-        // >
-        //   Close
-        // </button>
-        null
-      ) : (
+      {status === "success" ? null : (
         <NewsletterInputField
           label="Subscribe"
           type="submit"
@@ -110,6 +95,5 @@ const Newsletter = ({ status, message, onValidated }) => {
     </form>
   );
 };
-
 
 export default Newsletter;

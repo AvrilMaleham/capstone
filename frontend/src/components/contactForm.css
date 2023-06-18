@@ -1,86 +1,55 @@
+.contactForm {
+  margin: auto;
+  width: 50%;
+}
 
-  .contactForm {
-   
-    margin: auto;
-    width: 50%;
+.inputField__field {
+  background-color: #fff;
+  border: 1px solid #29343e;
+  font-size: 16px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: bold;
+  color: #29343e;
+  border-radius: 10px;
+  font-family: "Varela Round", sans-serif;
+}
 
-  }
-
-  .inputField__field {
-   
-    background-color: #fff;
-
-    border: 1px solid #29343e;
-    font-size: 16px;
-    padding: 16px 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    font-weight: bold;
-    color: #29343e;
-    border-radius: 10px;
-    font-family: 'Varela Round', sans-serif;
- 
-  }
-
-  .inputField__field:focus {
-    outline: none !important;
-    border-color: #29343e;
-    box-shadow: 0 1px 4px rgba(41, 52, 62, 0.45);
-  }
-
-
-  
-  /* ::placeholder { Firefox
-    font-weight: normal;
-    color: #29343e;
-  }
-  
-  :-ms-input-placeholder { Internet Explorer 10-11
-    color: #29343e;
-    font-weight: normal;
-  }
-  
-  ::-ms-input-placeholder { Microsoft Edge
-    color: #29343e;
-    font-weight: normal;
-  } */
-  
-
-
-
+.inputField__field:focus {
+  outline: none !important;
+  border-color: #29343e;
+  box-shadow: 0 1px 4px rgba(41, 52, 62, 0.45);
+}
 
 .center {
   margin: auto;
 }
-  
+
 .button {
   color: #29343e;
   width: 100px;
   height: 40px;
   margin-bottom: 40px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   border-radius: 10px;
-  background-color:#ffffff ;
+  background-color: #ffffff;
   border-style: none;
-  border: 1px solid  #29343e;
-
-    letter-spacing: 2px;
-  
+  border: 1px solid #29343e;
+  letter-spacing: 2px;
 }
 
 .thankMSG {
-
   text-align: center;
-
 }
 
 .button:hover {
   background-color: #29343e;
-  color:#f4f4f4 ;
+  color: #f4f4f4;
+}
+
+@media (max-width: 550px) {
+  .contactForm {
+    width: 75%;
   }
-  
-  @media (max-width: 550px) {
-    .contactForm {
-     width: 75%;
-    }
 }
