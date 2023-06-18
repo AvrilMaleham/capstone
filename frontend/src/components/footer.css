@@ -1,79 +1,75 @@
 .footer {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    height: 110px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    z-index: 50;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  height: 110px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  z-index: 50;
 }
 
 .break {
-    height: 1px;
-    background-color: #29343e;
+  height: 1px;
+  background-color: #29343e;
 }
 
 .first {
-    color: #29343e;
-    list-style: none;
+  color: #29343e;
+  list-style: none;
 }
 
 .second {
-    color: #29343e;
-    list-style: none;
-
+  color: #29343e;
+  list-style: none;
 }
 
-.third{
-    color: #29343e;
-    list-style: none;
-    padding-right: 4%;
-
+.third {
+  color: #29343e;
+  list-style: none;
+  padding-right: 4%;
 }
 
 .nav_link {
-    text-decoration: none;
-    color: #29343e;
+  text-decoration: none;
+  color: #29343e;
 }
 
 .number {
-
-        text-decoration: none;
-        color: #29343e;
-  
+  text-decoration: none;
+  color: #29343e;
 }
 
 .number:hover {
-    color: #db4814;
+  color: #db4814;
 }
 
 @media (max-width: 800px) {
-    .footer {
-        font-size: 12px;
-    }
+  .footer {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 590px) {
-    .footer {
-        font-size: 9px;
-    }
+  .footer {
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 490px) {
-    .footer {
-        font-size: 9px;
-        display: block;
-        text-align: center;
-    }
-    .first {
-        padding-left: 0%;
-    }
-    .second {
-        padding-left: 0%;
-    }
-    .third {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
+  .footer {
+    font-size: 9px;
+    display: block;
+    text-align: center;
+  }
+  .first {
+    padding-left: 0%;
+  }
+  .second {
+    padding-left: 0%;
+  }
+  .third {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 }

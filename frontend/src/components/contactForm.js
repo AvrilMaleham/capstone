@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from "react";
-import "./contactForm.css"
+import "./contactForm.css";
 
-
-const ContactForm = ({onValidated}) => {
-
+const ContactForm = ({ onValidated }) => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [message, setMessage] = useState("");
-  
+
   const [status, setStatus] = useState("SUBMIT");
 
   useEffect(() => {
-    if(status === "Thanks for getting in touch!") clearFields();
-  }, [status])
+    if (status === "Thanks for getting in touch!") clearFields();
+  }, [status]);
 
   const clearFields = () => {
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setMessage('');
-  }
-
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,28 +43,60 @@ const ContactForm = ({onValidated}) => {
       EMAIL: email.value,
       MERGE1: firstName.value,
       MERGE2: lastName.value,
-  });
+    });
   };
-
 
   return (
     <form className="contactForm" onSubmit={handleSubmit}>
-      { status === "SUBMIT" ? (
-      <div className="center">
-        <input placeholder="First Name" className="inputField__field" type="text" id="firstName" value={firstName} onChange={(e)=>setFirstName(e.target.value)} required />
-    <br></br>
-        <input placeholder="Last Name" className="inputField__field" type="text" id="lastName" value={lastName} onChange={(e)=>setLastName(e.target.value)} required />
-        <br></br>
-        <input placeholder="Email Address" className="inputField__field" type="email" id="email" value={email}  onChange={(e)=>setEmail(e.target.value)} required />
-        <br></br>
-        <textarea rows="2" placeholder="How can we help?" className="inputField__field" id="message" value={message}  onChange={(e)=>setMessage(e.target.value)} required />
-        <br></br>
-        <button className="button" type="submit">{status}</button>
-      </div>
-       
-       ) : <p className="thankMSG">Thanks for getting in touch!</p> }
-     
-     
+      {status === "SUBMIT" ? (
+        <div className="center">
+          <input
+            placeholder="First Name"
+            className="inputField__field"
+            type="text"
+            id="firstName"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            required
+          />
+          <br></br>
+          <input
+            placeholder="Last Name"
+            className="inputField__field"
+            type="text"
+            id="lastName"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            required
+          />
+          <br></br>
+          <input
+            placeholder="Email Address"
+            className="inputField__field"
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <br></br>
+          <textarea
+            rows="2"
+            placeholder="How can we help?"
+            className="inputField__field"
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+          <br></br>
+          <button className="button" type="submit">
+            {status}
+          </button>
+        </div>
+      ) : (
+        <p className="thankMSG">Thanks for getting in touch!</p>
+      )}
     </form>
   );
 };
