@@ -1,16 +1,12 @@
-
 .successScreen {
-    /* max-width: 1300px; */
-    margin: 3rem auto;
-    /* display: flex; */
-    height: 110vh;
-    text-align: center;
+  margin: 3rem auto;
+  height: 110vh;
+  text-align: center;
 }
 
 .paymenttxt {
-color: #29343e;
-font-family: sans-serif;
-font-weight: bold;
-letter-spacing: 2px;
+  color: #29343e;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-
