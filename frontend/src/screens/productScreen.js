@@ -2,11 +2,9 @@ import "./productScreen.css";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-//Components
 import Product from "../components/product";
-import {BannerButton} from "../components/buttons";
+import { BannerButton } from "../components/buttons";
 
-//Actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
 const ProductScreen = () => {
@@ -20,25 +18,25 @@ const ProductScreen = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="productScreen">
-     
       <div className="productBanner">
         <h1 className="productScreen_title">PRODUCTS</h1>
         <div className="buttonLayout">
-<BannerButton name="Services" nav="/services" ></BannerButton>
-<BannerButton name="Contact" nav="/contact" ></BannerButton>
+          <BannerButton name="Services" nav="/services"></BannerButton>
+          <BannerButton name="Contact" nav="/contact"></BannerButton>
         </div>
       </div>
-     
-      <p className="servicespara">Purchase our checklists and workflows so your team never misses a step again. <br>
-      </br>
-      Keep your entire team on the same page, and consistency for your clients. 
 
-</p>
+      <p className="servicespara">
+        Purchase our checklists and workflows so your team never misses a step
+        again. <br></br>
+        Keep your entire team on the same page, and consistency for your
+        clients.
+      </p>
 
       <div className="homeScreen_products">
         {loading ? (
@@ -52,7 +50,6 @@ const ProductScreen = () => {
               productId={product._id}
               name={product.name}
               price={product.price}
-            // description={product.description}  
               imageUrl={product.imageUrl}
             />
           ))

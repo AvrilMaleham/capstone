@@ -4,7 +4,6 @@
 
 .left_image {
   margin: 1rem auto;
-
   width: 60%;
 }
 
@@ -31,7 +30,6 @@
 }
 
 .bookbutton {
-  /* grid-column: 1/-1; */
   width: 300px;
   padding: 10px 16px;
   background-color: #29343e;
@@ -58,7 +56,6 @@
 
 .middle {
   margin: 1rem auto;
-
   text-align: center;
 }
 
@@ -68,15 +65,13 @@
 }
 
 .servicecta {
-    text-decoration: none;
-    color: #29343e;
-    font-size: 1.2rem;
- 
-
+  text-decoration: none;
+  color: #29343e;
+  font-size: 1.2rem;
 }
 
-.servicecta:hover{
-    color: #db4814;
+.servicecta:hover {
+  color: #db4814;
 }
 
 @media (max-width: 760px) {
@@ -92,6 +87,6 @@
     width: 95%;
   }
   .endbit {
-    width:95%;
+    width: 95%;
   }
 }

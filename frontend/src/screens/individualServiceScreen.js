@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { PopupButton } from "react-calendly";
 import { Link } from "react-router-dom";
 
-//Actions
 import { getServiceDetails } from "../redux/actions/serviceActions";
 
 import { useParams, useNavigate } from "react-router-dom";
@@ -33,7 +32,6 @@ const IndividualServiceScreen = () => {
     service.name === "Inspections" ? setBook(true) : setBook(false);
     service.name === "Business Health Check" ? setCheck(true) : setCheck(false);
   };
-
 
   return (
     <div>
@@ -259,7 +257,6 @@ const IndividualServiceScreen = () => {
                       report.
                     </p>
                     <br></br>
-                 
 
                     <h5>Additional add-ons:</h5>
                     <p>
@@ -283,19 +280,19 @@ const IndividualServiceScreen = () => {
                       </li>
                       <br></br>
                       <li>
-                      Training, coaching, and ongoing support to execute the above plan 
-
+                        Training, coaching, and ongoing support to execute the
+                        above plan
                         <ul>
                           <li>
-                          Including ongoing recommendations, direction checks, and support to keep the team accountable 
-
+                            Including ongoing recommendations, direction checks,
+                            and support to keep the team accountable
                           </li>
                           <li>
-                          Document templates and checklists will be provided 
+                            Document templates and checklists will be provided
                           </li>
                           <li>
-                          A support and training schedule will be agreed upon in advance
-
+                            A support and training schedule will be agreed upon
+                            in advance
                           </li>
                         </ul>
                       </li>
@@ -310,18 +307,19 @@ const IndividualServiceScreen = () => {
                   <PopupButton
                     className="bookbutton"
                     url="https://calendly.com/avrilmaleham"
-                    /*
-                     * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                     * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                     */
                     rootElement={document.getElementById("root")}
                     text="BOOK NOW"
                   />
                 ) : null}
               </div>
-              <div className="endbit" >
-               
-               <p> <Link to="/contact" className="servicecta">Contact us</Link> today to find out more about how we can help you.</p>
+              <div className="endbit">
+                <p>
+                  {" "}
+                  <Link to="/contact" className="servicecta">
+                    Contact us
+                  </Link>{" "}
+                  today to find out more about how we can help you.
+                </p>
               </div>
             </div>
           </>
