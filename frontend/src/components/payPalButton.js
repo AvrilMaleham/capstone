@@ -56,7 +56,7 @@ function MyPayPal(props) {
       <PayPalScriptProvider
         options={{
           "client-id":
-            "AXjKvOCbKAY8X0lWq_z8gTP2m-qLXNJBEptj9ArMzkTxxQ-Nrj9GV44CkRMnM6U0qKr08VEtQB4v5KvP",
+            "AaZRBzTpeVijk1UaaEjgiGyUcbAFWALbhTVS2Bf-FRC2sWzcRdyt5t-RToWneoC9_D60Jb12f4pbSNIR",
           "disable-funding": "card",
           currency: "NZD",
         }}
