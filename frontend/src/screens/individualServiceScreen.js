@@ -306,7 +306,7 @@ const IndividualServiceScreen = () => {
                 {book ? (
                   <PopupButton
                     className="bookbutton"
-                    url="https://calendly.com/avrilmaleham"
+                    url="https://calendly.com/edifyinspections"
                     rootElement={document.getElementById("root")}
                     text="BOOK NOW"
                   />
