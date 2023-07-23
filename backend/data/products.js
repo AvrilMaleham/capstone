@@ -2,7 +2,7 @@ const products = [
   {
     name: "New/Ingoing tenant checklist (entry checklist)",
     imageUrl: "/blueBack.png",
-    price: 150,
+    price: 1,
   },
   {
     name: "Outgoing tenant checklist (vacate checklist)",
