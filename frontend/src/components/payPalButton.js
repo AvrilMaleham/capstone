@@ -1,4 +1,4 @@
-require("dotenv").config();
+
 import { useEffect, useState } from "react";
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 
