@@ -4,6 +4,8 @@ services:
 
   client:
     image: avrilm/capstone:frontend-latest
+    environment:
+        - REACT_APP_PAYPAL_CLIENT_ID=${REACT_APP_PAYPAL_CLIENT_ID}
     ports: 
         - "80:3000"
 
