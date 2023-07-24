@@ -1,3 +1,4 @@
+require("dotenv").config();
 import { useEffect, useState } from "react";
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 
@@ -56,7 +57,7 @@ function MyPayPal(props) {
       <PayPalScriptProvider
         options={{
           "client-id":
-            "AaZRBzTpeVijk1UaaEjgiGyUcbAFWALbhTVS2Bf-FRC2sWzcRdyt5t-RToWneoC9_D60Jb12f4pbSNIR",
+          process.env.PAYPAL_CLIENT_ID,
           "disable-funding": "card",
           currency: "NZD",
         }}
