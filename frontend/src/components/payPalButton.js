@@ -57,7 +57,7 @@ function MyPayPal(props) {
       <PayPalScriptProvider
         options={{
           "client-id":
-          process.env.REACT_APP_PAYPAL_CLIENT_ID,
+          "AaZRBzTpeVijk1UaaEjgiGyUcbAFWALbhTVS2Bf-FRC2sWzcRdyt5t-RToWneoC9_D60Jb12f4pbSNIR",
           "disable-funding": "card",
           currency: "NZD",
         }}
